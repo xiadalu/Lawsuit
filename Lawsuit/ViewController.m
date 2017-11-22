@@ -24,7 +24,9 @@
     [self.view addSubview:btn];
 }
 
-
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSLog(@"%@",__func__);
+}
 
 
 

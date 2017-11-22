@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ViewController2.h"
 @interface ViewController ()
 
 @end
@@ -25,9 +25,9 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    ViewController2* vc2 = [[ViewController2 alloc] init];
+    [self presentViewController:vc2 animated:YES completion:nil];
 }
 
 

@@ -28,6 +28,8 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     ViewController2* vc2 = [[ViewController2 alloc] init];
     [self presentViewController:vc2 animated:YES completion:nil];
+    
+    NSLog(@"%@",vc2);
 }
 
 

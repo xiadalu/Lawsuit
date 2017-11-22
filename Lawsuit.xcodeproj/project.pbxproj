@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840AB1411FC56B6F007A91FA /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 840AB1401FC56B6F007A91FA /* ViewController2.m */; };
 		84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */; };
 		84FC960D1FC55B3D00DEBDA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC960C1FC55B3D00DEBDA2 /* ViewController.m */; };
 		84FC96101FC55B3D00DEBDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC960E1FC55B3D00DEBDA2 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840AB13F1FC56B6F007A91FA /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		840AB1401FC56B6F007A91FA /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		84FC96051FC55B3D00DEBDA2 /* Lawsuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lawsuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FC96081FC55B3D00DEBDA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */,
 				84FC960B1FC55B3D00DEBDA2 /* ViewController.h */,
 				84FC960C1FC55B3D00DEBDA2 /* ViewController.m */,
+				840AB13F1FC56B6F007A91FA /* ViewController2.h */,
+				840AB1401FC56B6F007A91FA /* ViewController2.m */,
 				84FC960E1FC55B3D00DEBDA2 /* Main.storyboard */,
 				84FC96111FC55B3D00DEBDA2 /* Assets.xcassets */,
 				84FC96131FC55B3D00DEBDA2 /* LaunchScreen.storyboard */,
@@ -266,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FC960D1FC55B3D00DEBDA2 /* ViewController.m in Sources */,
+				840AB1411FC56B6F007A91FA /* ViewController2.m in Sources */,
 				84FC96181FC55B3D00DEBDA2 /* main.m in Sources */,
 				84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */,
 			);

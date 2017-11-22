@@ -31,7 +31,9 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    NSLog(@"%@",__func__);
+    ViewController2* vc2 = [[ViewController2 alloc] init];
+    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:vc2];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 

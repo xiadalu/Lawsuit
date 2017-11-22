@@ -22,6 +22,12 @@
     [btn setTitle:@"我说" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [self.view addSubview:btn];
+    
+    UIButton* btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn2.frame = CGRectMake(100, 100, 200, 100);
+    [btn2 setTitle:@"你是" forState:UIControlStateNormal];
+    [btn2 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self.view addSubview:btn2];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

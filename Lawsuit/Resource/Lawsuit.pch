@@ -1,0 +1,28 @@
+//
+//  Lawsuit.pch
+//  Lawsuit
+//
+//  Created by xiadalu on 2017/11/23.
+//  Copyright © 2017年 xiadalu. All rights reserved.
+//
+
+#ifndef Lawsuit_pch
+#define Lawsuit_pch
+
+#import "MyNav.h"
+//category
+#import "CZAdditions.h"
+
+//Macro
+#import "AppMacro.h"
+#import "common.h"
+#import "NotificationMacro.h"
+
+//pods
+#import <XMNetworking.h>
+#import <RealReachability.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Lawsuit_pch */

@@ -21,6 +21,8 @@ pod 'ZYCornerRadius'
 
 pod 'MLeaksFinder'
 
+pod 'DCURLRouter'
+
 pod 'RealReachability'
 
 pod 'SVProgressHUD'

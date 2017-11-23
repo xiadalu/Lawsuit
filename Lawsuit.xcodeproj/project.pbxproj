@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840BFD981FC6AE0F00F51468 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 840BFD971FC6AE0F00F51468 /* Info.plist */; };
+		840BFDA61FC6B18A00F51468 /* NSObject+DLSVP.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFDA51FC6B18A00F51468 /* NSObject+DLSVP.m */; };
+		840BFDAA1FC6B46A00F51468 /* MyNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFDA81FC6B46A00F51468 /* MyNav.m */; };
+		840BFE7F1FC6B75D00F51468 /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFE661FC6B75C00F51468 /* UIColor+CZAddition.m */; };
+		840BFE801FC6B75D00F51468 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFE671FC6B75C00F51468 /* UIView+CZAddition.m */; };
+		840BFE811FC6B75D00F51468 /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFE6A1FC6B75C00F51468 /* UIScreen+CZAddition.m */; };
+		840BFE871FC6B75D00F51468 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFE781FC6B75C00F51468 /* UIViewController+CZAddition.m */; };
+		840BFE8F1FC6C90E00F51468 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFE8E1FC6C90E00F51468 /* BaseController.m */; };
+		840BFE921FC6C93400F51468 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFE911FC6C93400F51468 /* MainController.m */; };
+		840BFE9C1FC6CD1B00F51468 /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFE9A1FC6CD1A00F51468 /* UIView_extra.m */; };
+		840BFE9D1FC6CD1B00F51468 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFE9B1FC6CD1A00F51468 /* LeftSlideViewController.m */; };
+		840BFEA01FC6CE5700F51468 /* MyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFE9F1FC6CE5700F51468 /* MyNavigationController.m */; };
+		840BFEA31FC6D73C00F51468 /* LeftList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 840BFEA21FC6D73C00F51468 /* LeftList.plist */; };
+		840BFEA81FC6DAE200F51468 /* LeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFEA71FC6DAE200F51468 /* LeftController.m */; };
+		840BFEAB1FC6DB2800F51468 /* SectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 840BFEAA1FC6DB2800F51468 /* SectionHeader.m */; };
 		84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */; };
 		84FC960D1FC55B3D00DEBDA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC960C1FC55B3D00DEBDA2 /* ViewController.m */; };
 		84FC96101FC55B3D00DEBDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC960E1FC55B3D00DEBDA2 /* Main.storyboard */; };
@@ -38,6 +53,39 @@
 /* Begin PBXFileReference section */
 		29C4BB8A79464189CC717EB2 /* Pods-Lawsuit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lawsuit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lawsuit/Pods-Lawsuit.release.xcconfig"; sourceTree = "<group>"; };
 		3D1BD50C1D0E046AF3B00111 /* Pods-Lawsuit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lawsuit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lawsuit/Pods-Lawsuit.debug.xcconfig"; sourceTree = "<group>"; };
+		840BFD971FC6AE0F00F51468 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840BFDA21FC6B08900F51468 /* AppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		840BFDA31FC6B0A400F51468 /* NotificationMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationMacro.h; sourceTree = "<group>"; };
+		840BFDA41FC6B18A00F51468 /* NSObject+DLSVP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DLSVP.h"; sourceTree = "<group>"; };
+		840BFDA51FC6B18A00F51468 /* NSObject+DLSVP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DLSVP.m"; sourceTree = "<group>"; };
+		840BFDA71FC6B22900F51468 /* Lawsuit.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lawsuit.pch; sourceTree = "<group>"; };
+		840BFDA81FC6B46A00F51468 /* MyNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNav.m; sourceTree = "<group>"; };
+		840BFDA91FC6B46A00F51468 /* MyNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNav.h; sourceTree = "<group>"; };
+		840BFE661FC6B75C00F51468 /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		840BFE671FC6B75C00F51468 /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		840BFE6A1FC6B75C00F51468 /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		840BFE6B1FC6B75C00F51468 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		840BFE731FC6B75C00F51468 /* UIView+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		840BFE741FC6B75C00F51468 /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		840BFE781FC6B75C00F51468 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		840BFE7B1FC6B75C00F51468 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		840BFE8B1FC6B7EB00F51468 /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		840BFE8C1FC6B97700F51468 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		840BFE8D1FC6C90E00F51468 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		840BFE8E1FC6C90E00F51468 /* BaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		840BFE901FC6C93400F51468 /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		840BFE911FC6C93400F51468 /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		840BFE981FC6CD1A00F51468 /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
+		840BFE991FC6CD1A00F51468 /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
+		840BFE9A1FC6CD1A00F51468 /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
+		840BFE9B1FC6CD1A00F51468 /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
+		840BFE9E1FC6CE5700F51468 /* MyNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyNavigationController.h; sourceTree = "<group>"; };
+		840BFE9F1FC6CE5700F51468 /* MyNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyNavigationController.m; sourceTree = "<group>"; };
+		840BFEA21FC6D73C00F51468 /* LeftList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LeftList.plist; sourceTree = "<group>"; };
+		840BFEA61FC6DAE200F51468 /* LeftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftController.h; sourceTree = "<group>"; };
+		840BFEA71FC6DAE200F51468 /* LeftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftController.m; sourceTree = "<group>"; };
+		840BFEA91FC6DB2800F51468 /* SectionHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionHeader.h; sourceTree = "<group>"; };
+		840BFEAA1FC6DB2800F51468 /* SectionHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionHeader.m; sourceTree = "<group>"; };
 		84FC96051FC55B3D00DEBDA2 /* Lawsuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lawsuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FC96081FC55B3D00DEBDA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,7 +94,6 @@
 		84FC960F1FC55B3D00DEBDA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84FC96111FC55B3D00DEBDA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FC96141FC55B3D00DEBDA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		84FC96161FC55B3D00DEBDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FC96171FC55B3D00DEBDA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84FC961D1FC55B3D00DEBDA2 /* LawsuitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LawsuitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FC96211FC55B3D00DEBDA2 /* LawsuitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LawsuitTests.m; sourceTree = "<group>"; };
@@ -91,6 +138,173 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		840BFD951FC6AE0F00F51468 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				840BFD961FC6AE0F00F51468 /* Images */,
+				840BFD971FC6AE0F00F51468 /* Info.plist */,
+				840BFDA71FC6B22900F51468 /* Lawsuit.pch */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		840BFD961FC6AE0F00F51468 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		840BFD991FC6AFA500F51468 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				840BFD9B1FC6AFA500F51468 /* Section */,
+				840BFDA01FC6AFA500F51468 /* Macro */,
+				840BFD9F1FC6AFA500F51468 /* Category */,
+				840BFDA11FC6AFA500F51468 /* Helper */,
+				840BFD9A1FC6AFA500F51468 /* Vendors */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		840BFD9A1FC6AFA500F51468 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				840BFE971FC6CD1A00F51468 /* LeftSlideViewController */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		840BFD9B1FC6AFA500F51468 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				840BFEA11FC6D71400F51468 /* Other */,
+				840BFE961FC6C95F00F51468 /* Login */,
+				840BFD9E1FC6AFA500F51468 /* Base */,
+				840BFD9D1FC6AFA500F51468 /* Main */,
+				840BFD9C1FC6AFA500F51468 /* Left */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		840BFD9C1FC6AFA500F51468 /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				840BFEA51FC6DAE200F51468 /* VC */,
+				840BFEA41FC6DAE200F51468 /* View */,
+			);
+			path = Left;
+			sourceTree = "<group>";
+		};
+		840BFD9D1FC6AFA500F51468 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				840BFE901FC6C93400F51468 /* MainController.h */,
+				840BFE911FC6C93400F51468 /* MainController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		840BFD9E1FC6AFA500F51468 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				840BFE8D1FC6C90E00F51468 /* BaseController.h */,
+				840BFE8E1FC6C90E00F51468 /* BaseController.m */,
+				840BFE9E1FC6CE5700F51468 /* MyNavigationController.h */,
+				840BFE9F1FC6CE5700F51468 /* MyNavigationController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		840BFD9F1FC6AFA500F51468 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				840BFE651FC6B75C00F51468 /* Additions */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		840BFDA01FC6AFA500F51468 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				840BFE8C1FC6B97700F51468 /* common.h */,
+				840BFDA21FC6B08900F51468 /* AppMacro.h */,
+				840BFDA31FC6B0A400F51468 /* NotificationMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		840BFDA11FC6AFA500F51468 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				840BFDA91FC6B46A00F51468 /* MyNav.h */,
+				840BFDA81FC6B46A00F51468 /* MyNav.m */,
+				840BFDA41FC6B18A00F51468 /* NSObject+DLSVP.h */,
+				840BFDA51FC6B18A00F51468 /* NSObject+DLSVP.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		840BFE651FC6B75C00F51468 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				840BFE741FC6B75C00F51468 /* UIColor+CZAddition.h */,
+				840BFE661FC6B75C00F51468 /* UIColor+CZAddition.m */,
+				840BFE731FC6B75C00F51468 /* UIView+CZAddition.h */,
+				840BFE671FC6B75C00F51468 /* UIView+CZAddition.m */,
+				840BFE8B1FC6B7EB00F51468 /* UIScreen+CZAddition.h */,
+				840BFE6A1FC6B75C00F51468 /* UIScreen+CZAddition.m */,
+				840BFE6B1FC6B75C00F51468 /* UIViewController+CZAddition.h */,
+				840BFE781FC6B75C00F51468 /* UIViewController+CZAddition.m */,
+				840BFE7B1FC6B75C00F51468 /* CZAdditions.h */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		840BFE961FC6C95F00F51468 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		840BFE971FC6CD1A00F51468 /* LeftSlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				840BFE981FC6CD1A00F51468 /* LeftSlideViewController.h */,
+				840BFE991FC6CD1A00F51468 /* UIView_extra.h */,
+				840BFE9A1FC6CD1A00F51468 /* UIView_extra.m */,
+				840BFE9B1FC6CD1A00F51468 /* LeftSlideViewController.m */,
+			);
+			path = LeftSlideViewController;
+			sourceTree = "<group>";
+		};
+		840BFEA11FC6D71400F51468 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				840BFEA21FC6D73C00F51468 /* LeftList.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		840BFEA41FC6DAE200F51468 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				840BFEA91FC6DB2800F51468 /* SectionHeader.h */,
+				840BFEAA1FC6DB2800F51468 /* SectionHeader.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		840BFEA51FC6DAE200F51468 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				840BFEA61FC6DAE200F51468 /* LeftController.h */,
+				840BFEA71FC6DAE200F51468 /* LeftController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		84FC95FC1FC55B3D00DEBDA2 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +330,7 @@
 		84FC96071FC55B3D00DEBDA2 /* Lawsuit */ = {
 			isa = PBXGroup;
 			children = (
+				840BFD991FC6AFA500F51468 /* Class */,
 				84FC96081FC55B3D00DEBDA2 /* AppDelegate.h */,
 				84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */,
 				84FC960B1FC55B3D00DEBDA2 /* ViewController.h */,
@@ -123,7 +338,7 @@
 				84FC960E1FC55B3D00DEBDA2 /* Main.storyboard */,
 				84FC96111FC55B3D00DEBDA2 /* Assets.xcassets */,
 				84FC96131FC55B3D00DEBDA2 /* LaunchScreen.storyboard */,
-				84FC96161FC55B3D00DEBDA2 /* Info.plist */,
+				840BFD951FC6AE0F00F51468 /* Resource */,
 				84FC96171FC55B3D00DEBDA2 /* main.m */,
 			);
 			path = Lawsuit;
@@ -265,6 +480,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840BFD981FC6AE0F00F51468 /* Info.plist in Resources */,
+				840BFEA31FC6D73C00F51468 /* LeftList.plist in Resources */,
 				84FC96151FC55B3D00DEBDA2 /* LaunchScreen.storyboard in Resources */,
 				84FC96121FC55B3D00DEBDA2 /* Assets.xcassets in Resources */,
 				84FC96101FC55B3D00DEBDA2 /* Main.storyboard in Resources */,
@@ -347,8 +564,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FC960D1FC55B3D00DEBDA2 /* ViewController.m in Sources */,
+				840BFE9D1FC6CD1B00F51468 /* LeftSlideViewController.m in Sources */,
 				84FC96181FC55B3D00DEBDA2 /* main.m in Sources */,
+				840BFE921FC6C93400F51468 /* MainController.m in Sources */,
+				840BFE811FC6B75D00F51468 /* UIScreen+CZAddition.m in Sources */,
+				840BFE7F1FC6B75D00F51468 /* UIColor+CZAddition.m in Sources */,
 				84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */,
+				840BFDAA1FC6B46A00F51468 /* MyNav.m in Sources */,
+				840BFEAB1FC6DB2800F51468 /* SectionHeader.m in Sources */,
+				840BFE8F1FC6C90E00F51468 /* BaseController.m in Sources */,
+				840BFEA01FC6CE5700F51468 /* MyNavigationController.m in Sources */,
+				840BFDA61FC6B18A00F51468 /* NSObject+DLSVP.m in Sources */,
+				840BFE9C1FC6CD1B00F51468 /* UIView_extra.m in Sources */,
+				840BFE801FC6B75D00F51468 /* UIView+CZAddition.m in Sources */,
+				840BFEA81FC6DAE200F51468 /* LeftController.m in Sources */,
+				840BFE871FC6B75D00F51468 /* UIViewController+CZAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +744,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDHXRNVFRZ;
-				INFOPLIST_FILE = Lawsuit/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Lawsuit/Resource/Lawsuit.pch";
+				INFOPLIST_FILE = Lawsuit/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Xiadalu.Lawsuit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,7 +760,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDHXRNVFRZ;
-				INFOPLIST_FILE = Lawsuit/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Lawsuit/Resource/Lawsuit.pch";
+				INFOPLIST_FILE = Lawsuit/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Xiadalu.Lawsuit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

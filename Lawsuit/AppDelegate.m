@@ -8,7 +8,14 @@
 
 #import "AppDelegate.h"
 
+
+#import "MainController.h"
+#import "LeftController.h"
+
+#import "MyNavigationController.h"
+
 @interface AppDelegate ()
+
 
 @end
 
@@ -16,10 +23,46 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //网络配置
+    [self networkConfig];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    //主控制器
+    MainController* mainVC = [[MainController alloc] init];
+    MyNavigationController* nav = [[MyNavigationController alloc] initWithRootViewController:mainVC];
+    
+    //左侧控制器
+    LeftController* leftVC = [[LeftController alloc] init];
+    
+    //联系左侧和主控制器
+    self.leftSliderVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView:nav];
+    
+    self.window.rootViewController = self.leftSliderVC;
+    
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
+#pragma mark 网络配置
+-(void)networkConfig{
+    //XMCenter配置
+    [XMCenter setupConfig:^(XMConfig * _Nonnull config) {
+        config.generalServer = REQURL;
+        config.callbackQueue = dispatch_get_main_queue();
+        
+        //        config.generalHeaders = @{@"Content-Type":@"text/xml"};
+#ifdef DEBUG
+        config.consoleLog = YES;
+#endif
+    }];
+    
+    //检查网络状态
+    [GLobalRealReachability startNotifier];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

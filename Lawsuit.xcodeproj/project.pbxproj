@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		840AB1411FC56B6F007A91FA /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 840AB1401FC56B6F007A91FA /* ViewController2.m */; };
 		84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */; };
 		84FC960D1FC55B3D00DEBDA2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC960C1FC55B3D00DEBDA2 /* ViewController.m */; };
 		84FC96101FC55B3D00DEBDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC960E1FC55B3D00DEBDA2 /* Main.storyboard */; };
@@ -16,6 +15,7 @@
 		84FC96181FC55B3D00DEBDA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC96171FC55B3D00DEBDA2 /* main.m */; };
 		84FC96221FC55B3D00DEBDA2 /* LawsuitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC96211FC55B3D00DEBDA2 /* LawsuitTests.m */; };
 		84FC962D1FC55B3D00DEBDA2 /* LawsuitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC962C1FC55B3D00DEBDA2 /* LawsuitUITests.m */; };
+		BF909A3F849711AFB826CFC3 /* libPods-Lawsuit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B38F14878093BC9EEBA43890 /* libPods-Lawsuit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		840AB13F1FC56B6F007A91FA /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
-		840AB1401FC56B6F007A91FA /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		29C4BB8A79464189CC717EB2 /* Pods-Lawsuit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lawsuit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lawsuit/Pods-Lawsuit.release.xcconfig"; sourceTree = "<group>"; };
+		3D1BD50C1D0E046AF3B00111 /* Pods-Lawsuit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lawsuit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lawsuit/Pods-Lawsuit.debug.xcconfig"; sourceTree = "<group>"; };
 		84FC96051FC55B3D00DEBDA2 /* Lawsuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lawsuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FC96081FC55B3D00DEBDA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +54,7 @@
 		84FC96281FC55B3D00DEBDA2 /* LawsuitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LawsuitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FC962C1FC55B3D00DEBDA2 /* LawsuitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LawsuitUITests.m; sourceTree = "<group>"; };
 		84FC962E1FC55B3D00DEBDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B38F14878093BC9EEBA43890 /* libPods-Lawsuit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lawsuit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF909A3F849711AFB826CFC3 /* libPods-Lawsuit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		356EFD933FEDC392DAB3548D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B38F14878093BC9EEBA43890 /* libPods-Lawsuit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84FC95FC1FC55B3D00DEBDA2 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,8 @@
 				84FC96201FC55B3D00DEBDA2 /* LawsuitTests */,
 				84FC962B1FC55B3D00DEBDA2 /* LawsuitUITests */,
 				84FC96061FC55B3D00DEBDA2 /* Products */,
+				ECCEACCB62E6FFA96D0EBA9B /* Pods */,
+				356EFD933FEDC392DAB3548D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,8 +120,6 @@
 				84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */,
 				84FC960B1FC55B3D00DEBDA2 /* ViewController.h */,
 				84FC960C1FC55B3D00DEBDA2 /* ViewController.m */,
-				840AB13F1FC56B6F007A91FA /* ViewController2.h */,
-				840AB1401FC56B6F007A91FA /* ViewController2.m */,
 				84FC960E1FC55B3D00DEBDA2 /* Main.storyboard */,
 				84FC96111FC55B3D00DEBDA2 /* Assets.xcassets */,
 				84FC96131FC55B3D00DEBDA2 /* LaunchScreen.storyboard */,
@@ -137,6 +147,15 @@
 			path = LawsuitUITests;
 			sourceTree = "<group>";
 		};
+		ECCEACCB62E6FFA96D0EBA9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D1BD50C1D0E046AF3B00111 /* Pods-Lawsuit.debug.xcconfig */,
+				29C4BB8A79464189CC717EB2 /* Pods-Lawsuit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84FC96311FC55B3D00DEBDA2 /* Build configuration list for PBXNativeTarget "Lawsuit" */;
 			buildPhases = (
+				3CC4E40A7858BD35E4F509DE /* [CP] Check Pods Manifest.lock */,
 				84FC96011FC55B3D00DEBDA2 /* Sources */,
 				84FC96021FC55B3D00DEBDA2 /* Frameworks */,
 				84FC96031FC55B3D00DEBDA2 /* Resources */,
+				B764E86F6DDCB549F89C7C7F /* [CP] Embed Pods Frameworks */,
+				C33F211352A4F037C6012778 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,13 +287,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3CC4E40A7858BD35E4F509DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lawsuit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B764E86F6DDCB549F89C7C7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lawsuit/Pods-Lawsuit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C33F211352A4F037C6012778 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Lawsuit/Pods-Lawsuit-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lawsuit/Pods-Lawsuit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84FC96011FC55B3D00DEBDA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				84FC960D1FC55B3D00DEBDA2 /* ViewController.m in Sources */,
-				840AB1411FC56B6F007A91FA /* ViewController2.m in Sources */,
 				84FC96181FC55B3D00DEBDA2 /* main.m in Sources */,
 				84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */,
 			);
@@ -434,6 +509,7 @@
 		};
 		84FC96321FC55B3D00DEBDA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D1BD50C1D0E046AF3B00111 /* Pods-Lawsuit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +524,7 @@
 		};
 		84FC96331FC55B3D00DEBDA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C4BB8A79464189CC717EB2 /* Pods-Lawsuit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

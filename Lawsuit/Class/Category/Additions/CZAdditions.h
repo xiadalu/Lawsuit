@@ -8,6 +8,7 @@
 #import "UIColor+CZAddition.h"
 #import "UIView+CZAddition.h"
 #import "UIScreen+CZAddition.h"
+#import "UIButton+CenterImageAndTitle.h"
 #import "UIViewController+CZAddition.h"
 
 

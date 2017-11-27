@@ -4,25 +4,25 @@
 <array>
 	<dict>
 		<key>icon</key>
-		<string></string>
+		<string>home_icon_apply_pre</string>
 		<key>text</key>
 		<string>申请第三方鉴定</string>
 	</dict>
 	<dict>
 		<key>icon</key>
-		<string></string>
+		<string>home_icon_apply_pre</string>
 		<key>text</key>
 		<string>律师咨询</string>
 	</dict>
 	<dict>
 		<key>icon</key>
-		<string></string>
+		<string>home_icon_apply_pre</string>
 		<key>text</key>
 		<string>帮助</string>
 	</dict>
 	<dict>
 		<key>icon</key>
-		<string></string>
+		<string>home_icon_apply_pre</string>
 		<key>text</key>
 		<string>设置</string>
 	</dict>

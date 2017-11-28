@@ -35,6 +35,15 @@
 		840E90141FCC193D00AFA482 /* SGPageTitleViewConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E900C1FCC193D00AFA482 /* SGPageTitleViewConfigure.m */; };
 		840E901D1FCC20E400AFA482 /* BaseSubCaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E901C1FCC20E400AFA482 /* BaseSubCaseController.m */; };
 		840E90201FCC211100AFA482 /* BaseSubCaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E901F1FCC211100AFA482 /* BaseSubCaseCell.m */; };
+		847F030E1FCD6F51006D2C0D /* MediatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03061FCD6F50006D2C0D /* MediatingCell.m */; };
+		847F030F1FCD6F51006D2C0D /* FinishMediateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03081FCD6F50006D2C0D /* FinishMediateCell.m */; };
+		847F03101FCD6F51006D2C0D /* NoMediateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03091FCD6F50006D2C0D /* NoMediateCell.m */; };
+		847F03111FCD6F51006D2C0D /* WaitAuditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F030D1FCD6F51006D2C0D /* WaitAuditCell.m */; };
+		847F031C1FCD6F74006D2C0D /* AllCaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03151FCD6F74006D2C0D /* AllCaseController.m */; };
+		847F031D1FCD6F74006D2C0D /* MediatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03161FCD6F74006D2C0D /* MediatingController.m */; };
+		847F031E1FCD6F74006D2C0D /* WaitAuditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03191FCD6F74006D2C0D /* WaitAuditController.m */; };
+		847F031F1FCD6F74006D2C0D /* NoMediateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F031A1FCD6F74006D2C0D /* NoMediateController.m */; };
+		847F03201FCD6F74006D2C0D /* FinishMediateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F031B1FCD6F74006D2C0D /* FinishMediateController.m */; };
 		84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */; };
 		84FC96101FC55B3D00DEBDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC960E1FC55B3D00DEBDA2 /* Main.storyboard */; };
 		84FC96121FC55B3D00DEBDA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FC96111FC55B3D00DEBDA2 /* Assets.xcassets */; };
@@ -125,6 +134,24 @@
 		840E901C1FCC20E400AFA482 /* BaseSubCaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSubCaseController.m; sourceTree = "<group>"; };
 		840E901E1FCC211100AFA482 /* BaseSubCaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseSubCaseCell.h; sourceTree = "<group>"; };
 		840E901F1FCC211100AFA482 /* BaseSubCaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSubCaseCell.m; sourceTree = "<group>"; };
+		847F03061FCD6F50006D2C0D /* MediatingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediatingCell.m; sourceTree = "<group>"; };
+		847F03071FCD6F50006D2C0D /* NoMediateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoMediateCell.h; sourceTree = "<group>"; };
+		847F03081FCD6F50006D2C0D /* FinishMediateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishMediateCell.m; sourceTree = "<group>"; };
+		847F03091FCD6F50006D2C0D /* NoMediateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoMediateCell.m; sourceTree = "<group>"; };
+		847F030A1FCD6F50006D2C0D /* WaitAuditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitAuditCell.h; sourceTree = "<group>"; };
+		847F030B1FCD6F51006D2C0D /* FinishMediateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishMediateCell.h; sourceTree = "<group>"; };
+		847F030C1FCD6F51006D2C0D /* MediatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatingCell.h; sourceTree = "<group>"; };
+		847F030D1FCD6F51006D2C0D /* WaitAuditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitAuditCell.m; sourceTree = "<group>"; };
+		847F03121FCD6F74006D2C0D /* WaitAuditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitAuditController.h; sourceTree = "<group>"; };
+		847F03131FCD6F74006D2C0D /* AllCaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllCaseController.h; sourceTree = "<group>"; };
+		847F03141FCD6F74006D2C0D /* MediatingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatingController.h; sourceTree = "<group>"; };
+		847F03151FCD6F74006D2C0D /* AllCaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllCaseController.m; sourceTree = "<group>"; };
+		847F03161FCD6F74006D2C0D /* MediatingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediatingController.m; sourceTree = "<group>"; };
+		847F03171FCD6F74006D2C0D /* FinishMediateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishMediateController.h; sourceTree = "<group>"; };
+		847F03181FCD6F74006D2C0D /* NoMediateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoMediateController.h; sourceTree = "<group>"; };
+		847F03191FCD6F74006D2C0D /* WaitAuditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitAuditController.m; sourceTree = "<group>"; };
+		847F031A1FCD6F74006D2C0D /* NoMediateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoMediateController.m; sourceTree = "<group>"; };
+		847F031B1FCD6F74006D2C0D /* FinishMediateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishMediateController.m; sourceTree = "<group>"; };
 		84FC96051FC55B3D00DEBDA2 /* Lawsuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lawsuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FC96081FC55B3D00DEBDA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -437,6 +464,16 @@
 			children = (
 				840E901B1FCC20E400AFA482 /* BaseSubCaseController.h */,
 				840E901C1FCC20E400AFA482 /* BaseSubCaseController.m */,
+				847F03131FCD6F74006D2C0D /* AllCaseController.h */,
+				847F03151FCD6F74006D2C0D /* AllCaseController.m */,
+				847F03171FCD6F74006D2C0D /* FinishMediateController.h */,
+				847F031B1FCD6F74006D2C0D /* FinishMediateController.m */,
+				847F03141FCD6F74006D2C0D /* MediatingController.h */,
+				847F03161FCD6F74006D2C0D /* MediatingController.m */,
+				847F03181FCD6F74006D2C0D /* NoMediateController.h */,
+				847F031A1FCD6F74006D2C0D /* NoMediateController.m */,
+				847F03121FCD6F74006D2C0D /* WaitAuditController.h */,
+				847F03191FCD6F74006D2C0D /* WaitAuditController.m */,
 			);
 			path = SubCaseVC;
 			sourceTree = "<group>";
@@ -444,6 +481,14 @@
 		840E90191FCC209F00AFA482 /* SubCaseView */ = {
 			isa = PBXGroup;
 			children = (
+				847F030B1FCD6F51006D2C0D /* FinishMediateCell.h */,
+				847F03081FCD6F50006D2C0D /* FinishMediateCell.m */,
+				847F030C1FCD6F51006D2C0D /* MediatingCell.h */,
+				847F03061FCD6F50006D2C0D /* MediatingCell.m */,
+				847F03071FCD6F50006D2C0D /* NoMediateCell.h */,
+				847F03091FCD6F50006D2C0D /* NoMediateCell.m */,
+				847F030A1FCD6F50006D2C0D /* WaitAuditCell.h */,
+				847F030D1FCD6F51006D2C0D /* WaitAuditCell.m */,
 				840E901E1FCC211100AFA482 /* BaseSubCaseCell.h */,
 				840E901F1FCC211100AFA482 /* BaseSubCaseCell.m */,
 			);
@@ -714,9 +759,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				840E90131FCC193D00AFA482 /* SGPageTitleView.m in Sources */,
+				847F031C1FCD6F74006D2C0D /* AllCaseController.m in Sources */,
 				8405C0AF1FCBBCC5002E5F2C /* UIButton+CenterImageAndTitle.m in Sources */,
 				840E90121FCC193D00AFA482 /* SGPageContentView.m in Sources */,
 				8405C0BA1FCBC645002E5F2C /* ListCaseCell.m in Sources */,
+				847F030F1FCD6F51006D2C0D /* FinishMediateCell.m in Sources */,
 				840BFE9D1FC6CD1B00F51468 /* LeftSlideViewController.m in Sources */,
 				84FC96181FC55B3D00DEBDA2 /* main.m in Sources */,
 				840E901D1FCC20E400AFA482 /* BaseSubCaseController.m in Sources */,
@@ -733,14 +780,21 @@
 				8405C0C11FCBE1CB002E5F2C /* MyMediationController.m in Sources */,
 				840BFEA01FC6CE5700F51468 /* MyNavigationController.m in Sources */,
 				840E90101FCC193D00AFA482 /* UIView+SGFrame.m in Sources */,
+				847F031F1FCD6F74006D2C0D /* NoMediateController.m in Sources */,
 				840BFDA61FC6B18A00F51468 /* NSObject+DLSVP.m in Sources */,
+				847F03111FCD6F51006D2C0D /* WaitAuditCell.m in Sources */,
+				847F030E1FCD6F51006D2C0D /* MediatingCell.m in Sources */,
 				840BFE9C1FC6CD1B00F51468 /* UIView_extra.m in Sources */,
+				847F031D1FCD6F74006D2C0D /* MediatingController.m in Sources */,
 				840BFE801FC6B75D00F51468 /* UIView+CZAddition.m in Sources */,
 				840BFEA81FC6DAE200F51468 /* LeftController.m in Sources */,
+				847F031E1FCD6F74006D2C0D /* WaitAuditController.m in Sources */,
 				8405C0C41FCBF5E7002E5F2C /* MyCaseController.m in Sources */,
+				847F03201FCD6F74006D2C0D /* FinishMediateController.m in Sources */,
 				840BFE871FC6B75D00F51468 /* UIViewController+CZAddition.m in Sources */,
 				840E90141FCC193D00AFA482 /* SGPageTitleViewConfigure.m in Sources */,
 				8405C0B71FCBC256002E5F2C /* NotHaveCase.m in Sources */,
+				847F03101FCD6F51006D2C0D /* NoMediateCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@
 
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
-
+#define kStatusHeight CGRectGetHeight([UIApplication sharedApplication].statusBarFrame)
 
 #define IS_IOS_10  [[[[UIDevice currentDevice] systemVersion] componentsSeparatedByString:@"."].firstObject intValue] >=10 ? YES : NO
 

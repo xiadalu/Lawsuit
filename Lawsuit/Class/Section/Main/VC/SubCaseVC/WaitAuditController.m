@@ -7,7 +7,8 @@
 //
 
 #import "WaitAuditController.h"
-
+#import "WaitAuditCell.h"
+#import "BaseSubCaseModel.h"
 @interface WaitAuditController ()
 
 @end
@@ -19,19 +20,40 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)loadData{
+    for (int i = 0 ; i < 10; i++) {
+        if (i%2==0) {
+            NSDictionary* dic = @{@"title":@"张三与李四的交通事故纠纷",
+                                  @"state":@"01",
+                                  @"time":@"2016-04-12 10:20",
+                                  };
+            BaseSubCaseModel* model = [BaseSubCaseModel yy_modelWithJSON:dic];
+            NSLog(@"[%@]",model);
+            [self.listArray addObject:model];
+
+        }else{
+            NSDictionary* dic = @{@"title":@"张三与李四的交通事故纠纷",
+                                  @"state":@"00",
+                                  @"time":@"2016-04-12 10:20",
+                                  };
+            BaseSubCaseModel* model = [BaseSubCaseModel yy_modelWithJSON:dic];
+            NSLog(@"[%@]",model);
+            [self.listArray addObject:model];
+        }
+    }
 }
 
-/*
-#pragma mark - Navigation
+-(WaitAuditCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString* iden = @"iden";
+    WaitAuditCell* cell = [tableView dequeueReusableCellWithIdentifier:iden];
+    if (!cell) {
+        cell = [[WaitAuditCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:iden];
+    }
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    BaseSubCaseModel* model = self.listArray[indexPath.row];
+    cell.model = model;
+    
+    return cell;
 }
-*/
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "NoMediateController.h"
+#import "NoMediateCell.h"
+#import "BaseSubCaseModel.h"
 
 @interface NoMediateController ()
 
@@ -18,20 +20,31 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)loadData{
+    for (int i = 0 ; i < 10; i++) {
+        NSDictionary* dic = @{@"title":@"张三与李四的交通事故纠纷",
+                              @"state":@"10",
+                              @"time":@"2016-04-12 10:20",
+                              };
+        BaseSubCaseModel* model = [BaseSubCaseModel yy_modelWithJSON:dic];
+        NSLog(@"[%@]",model);
+        [self.listArray addObject:model];
+    }
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+-(NoMediateCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString* iden = @"iden";
+    NoMediateCell* cell = [tableView dequeueReusableCellWithIdentifier:iden];
+    if (!cell) {
+        cell = [[NoMediateCell alloc] initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:iden];
+    }
+    
+    BaseSubCaseModel* model = self.listArray[indexPath.row];
+    cell.model = model;
+    
+    return cell;
 }
-*/
 
 @end

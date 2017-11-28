@@ -8,7 +8,6 @@
 
 #import "MyCaseController.h"
 #import "SGPagingView.h"
-#import "meController.h"
 @interface MyCaseController ()<SGPageTitleViewDelegate,SGPageContentViewDelegate>
 
 

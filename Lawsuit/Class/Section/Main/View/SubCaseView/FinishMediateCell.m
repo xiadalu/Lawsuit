@@ -15,10 +15,17 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+-(void)setUI{
+    
+    [super setUI];
+    
+    self.processImage.hidden = NO;
+    self.stateLabel.hidden = YES;
+    
+    self.reeditBtn.hidden = YES;
+    self.rescindBtn.hidden = YES;
 }
+
+
 
 @end

@@ -34,16 +34,19 @@
 		840E90131FCC193D00AFA482 /* SGPageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E900B1FCC193D00AFA482 /* SGPageTitleView.m */; };
 		840E90141FCC193D00AFA482 /* SGPageTitleViewConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E900C1FCC193D00AFA482 /* SGPageTitleViewConfigure.m */; };
 		840E901D1FCC20E400AFA482 /* BaseSubCaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E901C1FCC20E400AFA482 /* BaseSubCaseController.m */; };
-		840E90201FCC211100AFA482 /* BaseSubCaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E901F1FCC211100AFA482 /* BaseSubCaseCell.m */; };
-		847F030E1FCD6F51006D2C0D /* MediatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03061FCD6F50006D2C0D /* MediatingCell.m */; };
-		847F030F1FCD6F51006D2C0D /* FinishMediateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03081FCD6F50006D2C0D /* FinishMediateCell.m */; };
-		847F03101FCD6F51006D2C0D /* NoMediateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03091FCD6F50006D2C0D /* NoMediateCell.m */; };
-		847F03111FCD6F51006D2C0D /* WaitAuditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F030D1FCD6F51006D2C0D /* WaitAuditCell.m */; };
-		847F031C1FCD6F74006D2C0D /* AllCaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03151FCD6F74006D2C0D /* AllCaseController.m */; };
-		847F031D1FCD6F74006D2C0D /* MediatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03161FCD6F74006D2C0D /* MediatingController.m */; };
-		847F031E1FCD6F74006D2C0D /* WaitAuditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03191FCD6F74006D2C0D /* WaitAuditController.m */; };
-		847F031F1FCD6F74006D2C0D /* NoMediateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F031A1FCD6F74006D2C0D /* NoMediateController.m */; };
-		847F03201FCD6F74006D2C0D /* FinishMediateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F031B1FCD6F74006D2C0D /* FinishMediateController.m */; };
+		847F02D41FCD0AF7006D2C0D /* BaseSubCaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02D31FCD0AF7006D2C0D /* BaseSubCaseModel.m */; };
+		847F02E61FCD1BBC006D2C0D /* AllCaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02E51FCD1BBC006D2C0D /* AllCaseController.m */; };
+		847F02E91FCD34C0006D2C0D /* WaitAuditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02E81FCD34C0006D2C0D /* WaitAuditController.m */; };
+		847F02EF1FCD34F7006D2C0D /* NoMediateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02EE1FCD34F7006D2C0D /* NoMediateController.m */; };
+		847F02F21FCD350D006D2C0D /* MediatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02F11FCD350D006D2C0D /* MediatingController.m */; };
+		847F02F51FCD3525006D2C0D /* FinishMediateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02F41FCD3525006D2C0D /* FinishMediateController.m */; };
+		847F02F81FCD60FA006D2C0D /* RelevanceCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02F71FCD60FA006D2C0D /* RelevanceCodeController.m */; };
+		847F02FF1FCD6A54006D2C0D /* ApplicantMediateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02FE1FCD6A54006D2C0D /* ApplicantMediateController.m */; };
+		847F032B1FCD74DA006D2C0D /* BaseSubCaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03231FCD74DA006D2C0D /* BaseSubCaseCell.m */; };
+		847F032C1FCD74DA006D2C0D /* FinishMediateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03241FCD74DA006D2C0D /* FinishMediateCell.m */; };
+		847F032D1FCD74DA006D2C0D /* MediatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03251FCD74DA006D2C0D /* MediatingCell.m */; };
+		847F032E1FCD74DA006D2C0D /* WaitAuditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03261FCD74DA006D2C0D /* WaitAuditCell.m */; };
+		847F032F1FCD74DA006D2C0D /* NoMediateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F032A1FCD74DA006D2C0D /* NoMediateCell.m */; };
 		84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */; };
 		84FC96101FC55B3D00DEBDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC960E1FC55B3D00DEBDA2 /* Main.storyboard */; };
 		84FC96121FC55B3D00DEBDA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FC96111FC55B3D00DEBDA2 /* Assets.xcassets */; };
@@ -132,26 +135,32 @@
 		840E900F1FCC193D00AFA482 /* SGPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPagingView.h; sourceTree = "<group>"; };
 		840E901B1FCC20E400AFA482 /* BaseSubCaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseSubCaseController.h; sourceTree = "<group>"; };
 		840E901C1FCC20E400AFA482 /* BaseSubCaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSubCaseController.m; sourceTree = "<group>"; };
-		840E901E1FCC211100AFA482 /* BaseSubCaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseSubCaseCell.h; sourceTree = "<group>"; };
-		840E901F1FCC211100AFA482 /* BaseSubCaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSubCaseCell.m; sourceTree = "<group>"; };
-		847F03061FCD6F50006D2C0D /* MediatingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediatingCell.m; sourceTree = "<group>"; };
-		847F03071FCD6F50006D2C0D /* NoMediateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoMediateCell.h; sourceTree = "<group>"; };
-		847F03081FCD6F50006D2C0D /* FinishMediateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishMediateCell.m; sourceTree = "<group>"; };
-		847F03091FCD6F50006D2C0D /* NoMediateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoMediateCell.m; sourceTree = "<group>"; };
-		847F030A1FCD6F50006D2C0D /* WaitAuditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitAuditCell.h; sourceTree = "<group>"; };
-		847F030B1FCD6F51006D2C0D /* FinishMediateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishMediateCell.h; sourceTree = "<group>"; };
-		847F030C1FCD6F51006D2C0D /* MediatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatingCell.h; sourceTree = "<group>"; };
-		847F030D1FCD6F51006D2C0D /* WaitAuditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitAuditCell.m; sourceTree = "<group>"; };
-		847F03121FCD6F74006D2C0D /* WaitAuditController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitAuditController.h; sourceTree = "<group>"; };
-		847F03131FCD6F74006D2C0D /* AllCaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllCaseController.h; sourceTree = "<group>"; };
-		847F03141FCD6F74006D2C0D /* MediatingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatingController.h; sourceTree = "<group>"; };
-		847F03151FCD6F74006D2C0D /* AllCaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllCaseController.m; sourceTree = "<group>"; };
-		847F03161FCD6F74006D2C0D /* MediatingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediatingController.m; sourceTree = "<group>"; };
-		847F03171FCD6F74006D2C0D /* FinishMediateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishMediateController.h; sourceTree = "<group>"; };
-		847F03181FCD6F74006D2C0D /* NoMediateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoMediateController.h; sourceTree = "<group>"; };
-		847F03191FCD6F74006D2C0D /* WaitAuditController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitAuditController.m; sourceTree = "<group>"; };
-		847F031A1FCD6F74006D2C0D /* NoMediateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoMediateController.m; sourceTree = "<group>"; };
-		847F031B1FCD6F74006D2C0D /* FinishMediateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishMediateController.m; sourceTree = "<group>"; };
+		847F02D21FCD0AF7006D2C0D /* BaseSubCaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseSubCaseModel.h; sourceTree = "<group>"; };
+		847F02D31FCD0AF7006D2C0D /* BaseSubCaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSubCaseModel.m; sourceTree = "<group>"; };
+		847F02E41FCD1BBC006D2C0D /* AllCaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllCaseController.h; sourceTree = "<group>"; };
+		847F02E51FCD1BBC006D2C0D /* AllCaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllCaseController.m; sourceTree = "<group>"; };
+		847F02E71FCD34C0006D2C0D /* WaitAuditController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaitAuditController.h; sourceTree = "<group>"; };
+		847F02E81FCD34C0006D2C0D /* WaitAuditController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaitAuditController.m; sourceTree = "<group>"; };
+		847F02ED1FCD34F7006D2C0D /* NoMediateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoMediateController.h; sourceTree = "<group>"; };
+		847F02EE1FCD34F7006D2C0D /* NoMediateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoMediateController.m; sourceTree = "<group>"; };
+		847F02F01FCD350D006D2C0D /* MediatingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatingController.h; sourceTree = "<group>"; };
+		847F02F11FCD350D006D2C0D /* MediatingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediatingController.m; sourceTree = "<group>"; };
+		847F02F31FCD3525006D2C0D /* FinishMediateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinishMediateController.h; sourceTree = "<group>"; };
+		847F02F41FCD3525006D2C0D /* FinishMediateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinishMediateController.m; sourceTree = "<group>"; };
+		847F02F61FCD60FA006D2C0D /* RelevanceCodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RelevanceCodeController.h; sourceTree = "<group>"; };
+		847F02F71FCD60FA006D2C0D /* RelevanceCodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RelevanceCodeController.m; sourceTree = "<group>"; };
+		847F02FD1FCD6A54006D2C0D /* ApplicantMediateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicantMediateController.h; sourceTree = "<group>"; };
+		847F02FE1FCD6A54006D2C0D /* ApplicantMediateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicantMediateController.m; sourceTree = "<group>"; };
+		847F03211FCD74D9006D2C0D /* FinishMediateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishMediateCell.h; sourceTree = "<group>"; };
+		847F03221FCD74DA006D2C0D /* NoMediateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoMediateCell.h; sourceTree = "<group>"; };
+		847F03231FCD74DA006D2C0D /* BaseSubCaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSubCaseCell.m; sourceTree = "<group>"; };
+		847F03241FCD74DA006D2C0D /* FinishMediateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishMediateCell.m; sourceTree = "<group>"; };
+		847F03251FCD74DA006D2C0D /* MediatingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediatingCell.m; sourceTree = "<group>"; };
+		847F03261FCD74DA006D2C0D /* WaitAuditCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitAuditCell.m; sourceTree = "<group>"; };
+		847F03271FCD74DA006D2C0D /* BaseSubCaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSubCaseCell.h; sourceTree = "<group>"; };
+		847F03281FCD74DA006D2C0D /* MediatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatingCell.h; sourceTree = "<group>"; };
+		847F03291FCD74DA006D2C0D /* WaitAuditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitAuditCell.h; sourceTree = "<group>"; };
+		847F032A1FCD74DA006D2C0D /* NoMediateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoMediateCell.m; sourceTree = "<group>"; };
 		84FC96051FC55B3D00DEBDA2 /* Lawsuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lawsuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FC96081FC55B3D00DEBDA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -205,13 +214,17 @@
 		8405C0B01FCBC207002E5F2C /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				840E90221FCC23E300AFA482 /* SubMediationVC */,
+				840E90181FCC207500AFA482 /* SubCaseVC */,
 				8405C0B21FCBC207002E5F2C /* MainController.h */,
 				8405C0B11FCBC207002E5F2C /* MainController.m */,
 				8405C0BF1FCBE1CB002E5F2C /* MyMediationController.h */,
 				8405C0C01FCBE1CB002E5F2C /* MyMediationController.m */,
 				8405C0C21FCBF5E7002E5F2C /* MyCaseController.h */,
 				8405C0C31FCBF5E7002E5F2C /* MyCaseController.m */,
-				840E90181FCC207500AFA482 /* SubCaseVC */,
+				847F02F61FCD60FA006D2C0D /* RelevanceCodeController.h */,
+				847F02F71FCD60FA006D2C0D /* RelevanceCodeController.m */,
+				847F02FA1FCD696A006D2C0D /* ApplicantMediateVC */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -219,6 +232,8 @@
 		8405C0B31FCBC207002E5F2C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				847F02FC1FCD69CB006D2C0D /* ApplicantMediateView */,
+				840E90211FCC23CA00AFA482 /* SubMediationView */,
 				840E90191FCC209F00AFA482 /* SubCaseView */,
 				8405C0B51FCBC256002E5F2C /* NotHaveCase.h */,
 				8405C0B61FCBC256002E5F2C /* NotHaveCase.m */,
@@ -231,9 +246,11 @@
 		8405C0BB1FCBDC77002E5F2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				840E90231FCC240100AFA482 /* SubMediationModel */,
 				840E901A1FCC20BE00AFA482 /* SubCaseModel */,
 				8405C0BC1FCBDC89002E5F2C /* ListCaseModel.h */,
 				8405C0BD1FCBDC89002E5F2C /* ListCaseModel.m */,
+				847F02FB1FCD69A9006D2C0D /* ApplicantMediateModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -464,16 +481,16 @@
 			children = (
 				840E901B1FCC20E400AFA482 /* BaseSubCaseController.h */,
 				840E901C1FCC20E400AFA482 /* BaseSubCaseController.m */,
-				847F03131FCD6F74006D2C0D /* AllCaseController.h */,
-				847F03151FCD6F74006D2C0D /* AllCaseController.m */,
-				847F03171FCD6F74006D2C0D /* FinishMediateController.h */,
-				847F031B1FCD6F74006D2C0D /* FinishMediateController.m */,
-				847F03141FCD6F74006D2C0D /* MediatingController.h */,
-				847F03161FCD6F74006D2C0D /* MediatingController.m */,
-				847F03181FCD6F74006D2C0D /* NoMediateController.h */,
-				847F031A1FCD6F74006D2C0D /* NoMediateController.m */,
-				847F03121FCD6F74006D2C0D /* WaitAuditController.h */,
-				847F03191FCD6F74006D2C0D /* WaitAuditController.m */,
+				847F02E41FCD1BBC006D2C0D /* AllCaseController.h */,
+				847F02E51FCD1BBC006D2C0D /* AllCaseController.m */,
+				847F02E71FCD34C0006D2C0D /* WaitAuditController.h */,
+				847F02E81FCD34C0006D2C0D /* WaitAuditController.m */,
+				847F02ED1FCD34F7006D2C0D /* NoMediateController.h */,
+				847F02EE1FCD34F7006D2C0D /* NoMediateController.m */,
+				847F02F01FCD350D006D2C0D /* MediatingController.h */,
+				847F02F11FCD350D006D2C0D /* MediatingController.m */,
+				847F02F31FCD3525006D2C0D /* FinishMediateController.h */,
+				847F02F41FCD3525006D2C0D /* FinishMediateController.m */,
 			);
 			path = SubCaseVC;
 			sourceTree = "<group>";
@@ -481,16 +498,16 @@
 		840E90191FCC209F00AFA482 /* SubCaseView */ = {
 			isa = PBXGroup;
 			children = (
-				847F030B1FCD6F51006D2C0D /* FinishMediateCell.h */,
-				847F03081FCD6F50006D2C0D /* FinishMediateCell.m */,
-				847F030C1FCD6F51006D2C0D /* MediatingCell.h */,
-				847F03061FCD6F50006D2C0D /* MediatingCell.m */,
-				847F03071FCD6F50006D2C0D /* NoMediateCell.h */,
-				847F03091FCD6F50006D2C0D /* NoMediateCell.m */,
-				847F030A1FCD6F50006D2C0D /* WaitAuditCell.h */,
-				847F030D1FCD6F51006D2C0D /* WaitAuditCell.m */,
-				840E901E1FCC211100AFA482 /* BaseSubCaseCell.h */,
-				840E901F1FCC211100AFA482 /* BaseSubCaseCell.m */,
+				847F03271FCD74DA006D2C0D /* BaseSubCaseCell.h */,
+				847F03231FCD74DA006D2C0D /* BaseSubCaseCell.m */,
+				847F03211FCD74D9006D2C0D /* FinishMediateCell.h */,
+				847F03241FCD74DA006D2C0D /* FinishMediateCell.m */,
+				847F03281FCD74DA006D2C0D /* MediatingCell.h */,
+				847F03251FCD74DA006D2C0D /* MediatingCell.m */,
+				847F03221FCD74DA006D2C0D /* NoMediateCell.h */,
+				847F032A1FCD74DA006D2C0D /* NoMediateCell.m */,
+				847F03291FCD74DA006D2C0D /* WaitAuditCell.h */,
+				847F03261FCD74DA006D2C0D /* WaitAuditCell.m */,
 			);
 			path = SubCaseView;
 			sourceTree = "<group>";
@@ -498,8 +515,54 @@
 		840E901A1FCC20BE00AFA482 /* SubCaseModel */ = {
 			isa = PBXGroup;
 			children = (
+				847F02D21FCD0AF7006D2C0D /* BaseSubCaseModel.h */,
+				847F02D31FCD0AF7006D2C0D /* BaseSubCaseModel.m */,
 			);
 			path = SubCaseModel;
+			sourceTree = "<group>";
+		};
+		840E90211FCC23CA00AFA482 /* SubMediationView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubMediationView;
+			sourceTree = "<group>";
+		};
+		840E90221FCC23E300AFA482 /* SubMediationVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubMediationVC;
+			sourceTree = "<group>";
+		};
+		840E90231FCC240100AFA482 /* SubMediationModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubMediationModel;
+			sourceTree = "<group>";
+		};
+		847F02FA1FCD696A006D2C0D /* ApplicantMediateVC */ = {
+			isa = PBXGroup;
+			children = (
+				847F02FD1FCD6A54006D2C0D /* ApplicantMediateController.h */,
+				847F02FE1FCD6A54006D2C0D /* ApplicantMediateController.m */,
+			);
+			path = ApplicantMediateVC;
+			sourceTree = "<group>";
+		};
+		847F02FB1FCD69A9006D2C0D /* ApplicantMediateModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApplicantMediateModel;
+			sourceTree = "<group>";
+		};
+		847F02FC1FCD69CB006D2C0D /* ApplicantMediateView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApplicantMediateView;
 			sourceTree = "<group>";
 		};
 		84FC95FC1FC55B3D00DEBDA2 = {
@@ -759,42 +822,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				840E90131FCC193D00AFA482 /* SGPageTitleView.m in Sources */,
-				847F031C1FCD6F74006D2C0D /* AllCaseController.m in Sources */,
 				8405C0AF1FCBBCC5002E5F2C /* UIButton+CenterImageAndTitle.m in Sources */,
 				840E90121FCC193D00AFA482 /* SGPageContentView.m in Sources */,
 				8405C0BA1FCBC645002E5F2C /* ListCaseCell.m in Sources */,
-				847F030F1FCD6F51006D2C0D /* FinishMediateCell.m in Sources */,
 				840BFE9D1FC6CD1B00F51468 /* LeftSlideViewController.m in Sources */,
 				84FC96181FC55B3D00DEBDA2 /* main.m in Sources */,
 				840E901D1FCC20E400AFA482 /* BaseSubCaseController.m in Sources */,
+				847F02FF1FCD6A54006D2C0D /* ApplicantMediateController.m in Sources */,
+				847F032F1FCD74DA006D2C0D /* NoMediateCell.m in Sources */,
 				840BFE811FC6B75D00F51468 /* UIScreen+CZAddition.m in Sources */,
 				840BFE7F1FC6B75D00F51468 /* UIColor+CZAddition.m in Sources */,
 				8405C0B41FCBC207002E5F2C /* MainController.m in Sources */,
+				847F02F21FCD350D006D2C0D /* MediatingController.m in Sources */,
 				840E90111FCC193D00AFA482 /* SGPageContentScrollView.m in Sources */,
 				84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */,
 				840BFDAA1FC6B46A00F51468 /* MyNav.m in Sources */,
 				840BFEAB1FC6DB2800F51468 /* SectionHeader.m in Sources */,
-				840E90201FCC211100AFA482 /* BaseSubCaseCell.m in Sources */,
+				847F02D41FCD0AF7006D2C0D /* BaseSubCaseModel.m in Sources */,
 				8405C0BE1FCBDC89002E5F2C /* ListCaseModel.m in Sources */,
+				847F032D1FCD74DA006D2C0D /* MediatingCell.m in Sources */,
 				840BFE8F1FC6C90E00F51468 /* BaseController.m in Sources */,
 				8405C0C11FCBE1CB002E5F2C /* MyMediationController.m in Sources */,
 				840BFEA01FC6CE5700F51468 /* MyNavigationController.m in Sources */,
+				847F032B1FCD74DA006D2C0D /* BaseSubCaseCell.m in Sources */,
 				840E90101FCC193D00AFA482 /* UIView+SGFrame.m in Sources */,
-				847F031F1FCD6F74006D2C0D /* NoMediateController.m in Sources */,
+				847F02EF1FCD34F7006D2C0D /* NoMediateController.m in Sources */,
 				840BFDA61FC6B18A00F51468 /* NSObject+DLSVP.m in Sources */,
-				847F03111FCD6F51006D2C0D /* WaitAuditCell.m in Sources */,
-				847F030E1FCD6F51006D2C0D /* MediatingCell.m in Sources */,
 				840BFE9C1FC6CD1B00F51468 /* UIView_extra.m in Sources */,
-				847F031D1FCD6F74006D2C0D /* MediatingController.m in Sources */,
 				840BFE801FC6B75D00F51468 /* UIView+CZAddition.m in Sources */,
+				847F032C1FCD74DA006D2C0D /* FinishMediateCell.m in Sources */,
+				847F02E61FCD1BBC006D2C0D /* AllCaseController.m in Sources */,
+				847F032E1FCD74DA006D2C0D /* WaitAuditCell.m in Sources */,
+				847F02F81FCD60FA006D2C0D /* RelevanceCodeController.m in Sources */,
 				840BFEA81FC6DAE200F51468 /* LeftController.m in Sources */,
-				847F031E1FCD6F74006D2C0D /* WaitAuditController.m in Sources */,
 				8405C0C41FCBF5E7002E5F2C /* MyCaseController.m in Sources */,
-				847F03201FCD6F74006D2C0D /* FinishMediateController.m in Sources */,
+				847F02E91FCD34C0006D2C0D /* WaitAuditController.m in Sources */,
+				847F02F51FCD3525006D2C0D /* FinishMediateController.m in Sources */,
 				840BFE871FC6B75D00F51468 /* UIViewController+CZAddition.m in Sources */,
 				840E90141FCC193D00AFA482 /* SGPageTitleViewConfigure.m in Sources */,
 				8405C0B71FCBC256002E5F2C /* NotHaveCase.m in Sources */,
-				847F03101FCD6F51006D2C0D /* NoMediateCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -963,6 +1029,7 @@
 				DEVELOPMENT_TEAM = BDHXRNVFRZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Lawsuit/Resource/Lawsuit.pch";
 				INFOPLIST_FILE = Lawsuit/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Xiadalu.Lawsuit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -981,6 +1048,7 @@
 				DEVELOPMENT_TEAM = BDHXRNVFRZ;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Lawsuit/Resource/Lawsuit.pch";
 				INFOPLIST_FILE = Lawsuit/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Xiadalu.Lawsuit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

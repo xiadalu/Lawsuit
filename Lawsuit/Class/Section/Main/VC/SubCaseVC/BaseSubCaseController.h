@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseSubCaseController : UIViewController
+@interface BaseSubCaseController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property(nonatomic,strong)UITableView* tableView;
+@property(nonatomic,strong)NSMutableArray* listArray;
+
+
+-(void)loadData;
 
 @end

@@ -8,6 +8,12 @@
 
 #import "MyCaseController.h"
 #import "SGPagingView.h"
+#import "BaseSubCaseController.h"
+#import "AllCaseController.h"
+#import "WaitAuditController.h"
+#import "NoMediateController.h"
+#import "MediatingController.h"
+#import "FinishMediateController.h"
 @interface MyCaseController ()<SGPageTitleViewDelegate,SGPageContentViewDelegate>
 
 
@@ -22,10 +28,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setupPageView];
+    self.title = @"我的案件";
 }
 
--(void)setupPageView{
+-(void)setUI{
     
     CGFloat statusHeight = CGRectGetHeight([UIApplication sharedApplication].statusBarFrame);
     CGFloat pageTitleViewY = 0;
@@ -34,7 +40,7 @@
     } else {
         pageTitleViewY = 88;
     }
-    NSArray *titleArr = @[@"全部", @"待审核", @"未调解", @"调解中",@"已结束",@"全部"];
+    NSArray *titleArr = @[@"全部", @"待审核", @"未调解", @"调解中",@"已结束"];
     
     SGPageTitleViewConfigure* configure = [SGPageTitleViewConfigure pageTitleViewConfigure];
     configure.titleColor = [UIColor lightGrayColor];
@@ -48,11 +54,13 @@
     _pageTitleView.selectedIndex = 1;
     
     
-    meController* meVC0 = [[meController alloc] init];
-    meController* meVC1 = [[meController alloc] init];
-    meController* meVC2 = [[meController alloc] init];
-    meController* meVC3 = [[meController alloc] init];
-    NSArray* childArr = @[meVC0,meVC1,meVC2,meVC3];
+    AllCaseController* allCaseVC = [[AllCaseController alloc] init];
+    
+    WaitAuditController* waitAuditVC = [[WaitAuditController alloc] init];
+    NoMediateController* noMediateVC = [[NoMediateController alloc] init];
+    MediatingController* mediatingVC = [[MediatingController alloc] init];
+    FinishMediateController* finishVC = [[FinishMediateController alloc] init];
+    NSArray* childArr = @[allCaseVC,waitAuditVC,noMediateVC,mediatingVC,finishVC];
     /// pageContentView
     CGFloat contentViewHeight = self.view.frame.size.height - CGRectGetMaxY(_pageTitleView.frame);
     self.pageContentView = [[SGPageContentView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_pageTitleView.frame), self.view.frame.size.width, contentViewHeight) parentVC:self childVCs:childArr];

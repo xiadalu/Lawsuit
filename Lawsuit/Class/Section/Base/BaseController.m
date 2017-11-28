@@ -18,8 +18,12 @@
     [super viewDidLoad];
     
     [self setupMyNav];
+    
+    [self setUI];
 }
-
+-(void)setUI{
+    
+}
 -(void)setupMyNav{
     self.myNav = [[MyNav alloc] init];
     self.myNav.navImageView.backgroundColor = [UIColor cz_colorWithRed:80 green:137 blue:235];

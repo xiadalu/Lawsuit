@@ -38,6 +38,7 @@
     [self.backView addSubview:self.titleLabel];
     
     self.processImage = [[UIImageView alloc] init];
+    self.processImage.contentMode = UIViewContentModeScaleAspectFit;
     [self.backView addSubview:self.processImage];
     
     self.timeLabel = [[UILabel alloc] init];

@@ -15,10 +15,28 @@
     // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+-(void)setUI{
+    
+    [super setUI];
+    
+    self.processImage.hidden = NO;
+    self.stateLabel.hidden = YES;
+    
+    self.reeditBtn.hidden = NO;
+    self.rescindBtn.hidden = NO;
+    
+    [self.reeditBtn setTitle:@"进入调解" forState:UIControlStateNormal];
+    [self.reeditBtn addTarget:self action:@selector(reeditBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.rescindBtn addTarget:self action:@selector(rescindBtnClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
+//撤销调解
+-(void)rescindBtnClick:(UIButton*)btn{
+    
+}
+//进入调解
+-(void)reeditBtnClick:(UIButton*)btn{
+    
+}
 @end

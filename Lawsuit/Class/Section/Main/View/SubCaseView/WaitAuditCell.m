@@ -10,15 +10,25 @@
 
 @implementation WaitAuditCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+
+-(void)setUI{
+    
+    [super setUI];
+    
+    self.processImage.hidden = YES;
+    self.stateLabel.hidden = NO;
+    
+    self.reeditBtn.hidden = NO;
+    self.rescindBtn.hidden = NO;
+    
+    [self.reeditBtn setTitle:@"再次编辑" forState:UIControlStateNormal];
+    [self.reeditBtn addTarget:self action:@selector(reeditBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+-(void)reeditBtnClick:(UIButton*)btn{
+    
 }
+
 
 @end

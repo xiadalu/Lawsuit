@@ -6,8 +6,8 @@
 //  Copyright © 2017年 xiadalu. All rights reserved.
 //
 
-#import "BaseSubCaseController.h"
+#import "BaseController.h"
 
-@interface RelevanceCodeController : BaseSubCaseController
+@interface RelevanceCodeController : BaseController
 
 @end

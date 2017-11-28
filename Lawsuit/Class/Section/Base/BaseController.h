@@ -13,7 +13,10 @@
 
 @property(nonatomic,strong)MyNav* myNav;
 
-
 -(void)setupMyNav;
+
+-(void)setUI;
+
+
 
 @end

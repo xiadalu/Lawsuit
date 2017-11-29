@@ -8,17 +8,22 @@
 
 #import "MainController.h"
 #import "AppDelegate.h"
+#import "LeftController.h"
 #import "NotHaveCase.h"
 #import "ListCaseCell.h"
 #import "MyCaseController.h"
 #import "MyMediationController.h"
 #import "ApplicantMediateController.h"
 #import "RelevanceCodeController.h"
+#import "UIViewController+LeftSlide.h"
 
 @interface MainController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong)UITableView* tableView;
 @property(nonatomic,strong)NSMutableArray* listArray;
+
+@property(nonatomic,strong)LeftController* leftVC;
+
 @end
 
 @implementation MainController
@@ -43,16 +48,18 @@
 -(void)setUI{
     
     UIButton* mediation = [UIButton buttonWithType:UIButtonTypeCustom];
-    mediation.frame = CGRectMake(0, 100, kScreenWidth/2, 100);
+    mediation.frame = CGRectMake(0, kStatusHeight+44, kScreenWidth/2, 100);
     [mediation setTitle:@"申请调解" forState:UIControlStateNormal];
     [mediation addTarget:self action:@selector(applyMediation) forControlEvents:UIControlEventTouchUpInside];
     [mediation setImage:[UIImage imageNamed:@"me_setting"] forState:UIControlStateNormal];
+    mediation.backgroundColor = MainColor;
     [mediation verticalCenterImageAndTitle];
     [self.view addSubview:mediation];
     
     UIButton* mask = [UIButton buttonWithType:UIButtonTypeCustom];
-    mask.frame = CGRectMake(kScreenWidth/2, 100, kScreenWidth/2, 100);
+    mask.frame = CGRectMake(kScreenWidth/2, kStatusHeight+44, kScreenWidth/2, 100);
     [mask setTitle:@"输入关联码" forState:UIControlStateNormal];
+    mask.backgroundColor = MainColor;
     [mask setImage:[UIImage imageNamed:@"me_setting"] forState:UIControlStateNormal];
     [mask addTarget:self action:@selector(applyMask) forControlEvents:UIControlEventTouchUpInside];
     [mask verticalCenterImageAndTitle];
@@ -146,33 +153,34 @@
 #pragma mark ----------------------导航------------------------
 -(void)setupMyNav{
     self.myNav = [[MyNav alloc] init];
-    self.myNav.navImageView.backgroundColor = [UIColor cz_colorWithRed:80 green:137 blue:235];
-    
+    self.myNav.navImageView.backgroundColor = MainColor;
+
     self.myNav.titleLabel.textColor = [UIColor whiteColor];
     [self.myNav.leftBtn setImage:[UIImage imageNamed:@"Shape"] forState:UIControlStateNormal];
     [self.myNav.leftBtn addTarget:self action:@selector(openLeft:) forControlEvents:UIControlEventTouchUpInside];
-    
-    
+
+
     [self.view addSubview:self.myNav];
 }
 
 -(void)openLeft:(UIButton*)btn{
-    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    //左侧控制器
+    if (!self.leftVC) {
+        self.leftVC = [[LeftController alloc] init];
+        CGRect frame = self.leftVC.view.frame;
+        frame.origin.x = - CGRectGetWidth(self.view.frame);
+        self.leftVC.view.frame = frame;
+        [[UIApplication sharedApplication].keyWindow addSubview:self.leftVC.view];
+    }
     
-    if (tempAppDelegate.leftSliderVC.closed)
-    {
-        [tempAppDelegate.leftSliderVC openLeftView];
-    }
-    else
-    {
-        [tempAppDelegate.leftSliderVC closeLeftView];
-    }
+    [self.leftVC show];
+    
 }
 #pragma mark --------------------懒加载-----------------------
 #pragma mark 懒加载tableView
 -(UITableView*)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 200, kScreenWidth, kScreenHeight-200) style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kStatusHeight+144, kScreenWidth, kScreenHeight-kStatusHeight-144) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }
@@ -185,21 +193,6 @@
     return _listArray;
 }
 
-#pragma mark ------------------其它---------------------
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    NSLog(@"viewWillDisappear");
-    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [tempAppDelegate.leftSliderVC setPanEnabled:NO];
-}
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    NSLog(@"viewWillAppear");
-    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [tempAppDelegate.leftSliderVC setPanEnabled:YES];
-}
 
 @end

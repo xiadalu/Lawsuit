@@ -8,6 +8,8 @@
 
 #import "LeftController.h"
 #import "SectionHeader.h"
+#import "UIViewController+LeftSlide.h"
+#define kRightWidth     100
 @interface LeftController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property(nonatomic,strong)UITableView* tableView;
@@ -21,12 +23,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setUI];
+    
     NSString* path = [[NSBundle mainBundle] pathForResource:@"LeftList" ofType:@"plist"];
     self.dataList = [NSArray arrayWithContentsOfFile:path];
     
     [self.view addSubview:self.tableView];
     
     
+}
+-(void)setUI{
+    [self initSlideFoundation];
+    UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(kScreenWidth-kRightWidth, 0,kRightWidth, kScreenHeight);
+    [btn addTarget:self action:@selector(hideLeft) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+-(void)hideLeft{
+    [self hide];
 }
 #pragma mark cell
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -73,7 +87,7 @@
 #pragma mark tableview
 -(UITableView*)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth-kRightWidth, kScreenHeight) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableFooterView = [[UIView alloc] init];

@@ -35,13 +35,8 @@
     MainController* mainVC = [[MainController alloc] init];
     MyNavigationController* nav = [[MyNavigationController alloc] initWithRootViewController:mainVC];
     
-    //左侧控制器
-    LeftController* leftVC = [[LeftController alloc] init];
     
-    //联系左侧和主控制器
-    self.leftSliderVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView:nav];
-    
-    self.window.rootViewController = self.leftSliderVC;
+    self.window.rootViewController = nav;
     
     [self.window makeKeyAndVisible];
 

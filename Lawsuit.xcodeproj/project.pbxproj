@@ -34,6 +34,14 @@
 		840E901D1FCC20E400AFA482 /* BaseSubCaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E901C1FCC20E400AFA482 /* BaseSubCaseController.m */; };
 		847017DB1FCE6ABB00F6B7FD /* UIViewController+LeftSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017D91FCE6ABB00F6B7FD /* UIViewController+LeftSlide.m */; };
 		847017E11FCE7E6F00F6B7FD /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017E01FCE7E6F00F6B7FD /* SettingController.m */; };
+		847017E91FCE850D00F6B7FD /* JXPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017E61FCE850D00F6B7FD /* JXPopoverView.m */; };
+		847017EA1FCE850D00F6B7FD /* JXPopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017E71FCE850D00F6B7FD /* JXPopoverViewCell.m */; };
+		847017EB1FCE850D00F6B7FD /* JXPopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017E81FCE850D00F6B7FD /* JXPopoverAction.m */; };
+		847017F11FCEA4F700F6B7FD /* SectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017F01FCEA4F700F6B7FD /* SectionView.m */; };
+		847017F41FCEAAAC00F6B7FD /* NSString+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017F31FCEAAAB00F6B7FD /* NSString+Function.m */; };
+		847017F71FCEB6D500F6B7FD /* LineTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017F61FCEB6D500F6B7FD /* LineTextView.m */; };
+		847018001FCEC98400F6B7FD /* ApplicantTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017FF1FCEC98400F6B7FD /* ApplicantTextViewCell.m */; };
+		847018031FCEC9B400F6B7FD /* ApplicantProofCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847018021FCEC9B400F6B7FD /* ApplicantProofCell.m */; };
 		847F02D41FCD0AF7006D2C0D /* BaseSubCaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02D31FCD0AF7006D2C0D /* BaseSubCaseModel.m */; };
 		847F02E61FCD1BBC006D2C0D /* AllCaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02E51FCD1BBC006D2C0D /* AllCaseController.m */; };
 		847F02E91FCD34C0006D2C0D /* WaitAuditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02E81FCD34C0006D2C0D /* WaitAuditController.m */; };
@@ -135,6 +143,22 @@
 		847017DA1FCE6ABB00F6B7FD /* UIViewController+LeftSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LeftSlide.h"; sourceTree = "<group>"; };
 		847017DF1FCE7E6F00F6B7FD /* SettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
 		847017E01FCE7E6F00F6B7FD /* SettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		847017E31FCE850D00F6B7FD /* JXPopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPopoverView.h; sourceTree = "<group>"; };
+		847017E41FCE850D00F6B7FD /* JXPopoverViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPopoverViewCell.h; sourceTree = "<group>"; };
+		847017E51FCE850D00F6B7FD /* JXPopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPopoverAction.h; sourceTree = "<group>"; };
+		847017E61FCE850D00F6B7FD /* JXPopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPopoverView.m; sourceTree = "<group>"; };
+		847017E71FCE850D00F6B7FD /* JXPopoverViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPopoverViewCell.m; sourceTree = "<group>"; };
+		847017E81FCE850D00F6B7FD /* JXPopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPopoverAction.m; sourceTree = "<group>"; };
+		847017EF1FCEA4F700F6B7FD /* SectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionView.h; sourceTree = "<group>"; };
+		847017F01FCEA4F700F6B7FD /* SectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionView.m; sourceTree = "<group>"; };
+		847017F21FCEAAAB00F6B7FD /* NSString+Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Function.h"; sourceTree = "<group>"; };
+		847017F31FCEAAAB00F6B7FD /* NSString+Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Function.m"; sourceTree = "<group>"; };
+		847017F51FCEB6D500F6B7FD /* LineTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineTextView.h; sourceTree = "<group>"; };
+		847017F61FCEB6D500F6B7FD /* LineTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineTextView.m; sourceTree = "<group>"; };
+		847017FE1FCEC98400F6B7FD /* ApplicantTextViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicantTextViewCell.h; sourceTree = "<group>"; };
+		847017FF1FCEC98400F6B7FD /* ApplicantTextViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicantTextViewCell.m; sourceTree = "<group>"; };
+		847018011FCEC9B400F6B7FD /* ApplicantProofCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicantProofCell.h; sourceTree = "<group>"; };
+		847018021FCEC9B400F6B7FD /* ApplicantProofCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicantProofCell.m; sourceTree = "<group>"; };
 		847F02D21FCD0AF7006D2C0D /* BaseSubCaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseSubCaseModel.h; sourceTree = "<group>"; };
 		847F02D31FCD0AF7006D2C0D /* BaseSubCaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSubCaseModel.m; sourceTree = "<group>"; };
 		847F02E41FCD1BBC006D2C0D /* AllCaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllCaseController.h; sourceTree = "<group>"; };
@@ -287,6 +311,7 @@
 		840BFD9A1FC6AFA500F51468 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				847017E21FCE850D00F6B7FD /* JXPopoverView */,
 				847017DA1FCE6ABB00F6B7FD /* UIViewController+LeftSlide.h */,
 				847017D91FCE6ABB00F6B7FD /* UIViewController+LeftSlide.m */,
 				840E90011FCC193D00AFA482 /* SGPagingView */,
@@ -369,6 +394,8 @@
 		840BFE651FC6B75C00F51468 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				847017F21FCEAAAB00F6B7FD /* NSString+Function.h */,
+				847017F31FCEAAAB00F6B7FD /* NSString+Function.m */,
 				8405C0AD1FCBBCC5002E5F2C /* UIButton+CenterImageAndTitle.h */,
 				8405C0AE1FCBBCC5002E5F2C /* UIButton+CenterImageAndTitle.m */,
 				840BFE741FC6B75C00F51468 /* UIColor+CZAddition.h */,
@@ -534,6 +561,19 @@
 			path = SubMediationModel;
 			sourceTree = "<group>";
 		};
+		847017E21FCE850D00F6B7FD /* JXPopoverView */ = {
+			isa = PBXGroup;
+			children = (
+				847017E31FCE850D00F6B7FD /* JXPopoverView.h */,
+				847017E61FCE850D00F6B7FD /* JXPopoverView.m */,
+				847017E41FCE850D00F6B7FD /* JXPopoverViewCell.h */,
+				847017E71FCE850D00F6B7FD /* JXPopoverViewCell.m */,
+				847017E51FCE850D00F6B7FD /* JXPopoverAction.h */,
+				847017E81FCE850D00F6B7FD /* JXPopoverAction.m */,
+			);
+			path = JXPopoverView;
+			sourceTree = "<group>";
+		};
 		847F02FA1FCD696A006D2C0D /* ApplicantMediateVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,6 +593,14 @@
 		847F02FC1FCD69CB006D2C0D /* ApplicantMediateView */ = {
 			isa = PBXGroup;
 			children = (
+				847017EF1FCEA4F700F6B7FD /* SectionView.h */,
+				847017F01FCEA4F700F6B7FD /* SectionView.m */,
+				847017F51FCEB6D500F6B7FD /* LineTextView.h */,
+				847017F61FCEB6D500F6B7FD /* LineTextView.m */,
+				847017FE1FCEC98400F6B7FD /* ApplicantTextViewCell.h */,
+				847017FF1FCEC98400F6B7FD /* ApplicantTextViewCell.m */,
+				847018011FCEC9B400F6B7FD /* ApplicantProofCell.h */,
+				847018021FCEC9B400F6B7FD /* ApplicantProofCell.m */,
 			);
 			path = ApplicantMediateView;
 			sourceTree = "<group>";
@@ -824,9 +872,14 @@
 				840BFE811FC6B75D00F51468 /* UIScreen+CZAddition.m in Sources */,
 				840BFE7F1FC6B75D00F51468 /* UIColor+CZAddition.m in Sources */,
 				8405C0B41FCBC207002E5F2C /* MainController.m in Sources */,
+				847017F71FCEB6D500F6B7FD /* LineTextView.m in Sources */,
 				847F02F21FCD350D006D2C0D /* MediatingController.m in Sources */,
+				847018001FCEC98400F6B7FD /* ApplicantTextViewCell.m in Sources */,
+				847017F41FCEAAAC00F6B7FD /* NSString+Function.m in Sources */,
 				840E90111FCC193D00AFA482 /* SGPageContentScrollView.m in Sources */,
 				84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */,
+				847018031FCEC9B400F6B7FD /* ApplicantProofCell.m in Sources */,
+				847017EA1FCE850D00F6B7FD /* JXPopoverViewCell.m in Sources */,
 				840BFDAA1FC6B46A00F51468 /* MyNav.m in Sources */,
 				840BFEAB1FC6DB2800F51468 /* SectionHeader.m in Sources */,
 				847F02D41FCD0AF7006D2C0D /* BaseSubCaseModel.m in Sources */,
@@ -837,9 +890,11 @@
 				8405C0C11FCBE1CB002E5F2C /* MyMediationController.m in Sources */,
 				840BFEA01FC6CE5700F51468 /* MyNavigationController.m in Sources */,
 				847017DB1FCE6ABB00F6B7FD /* UIViewController+LeftSlide.m in Sources */,
+				847017E91FCE850D00F6B7FD /* JXPopoverView.m in Sources */,
 				847F032B1FCD74DA006D2C0D /* BaseSubCaseCell.m in Sources */,
 				840E90101FCC193D00AFA482 /* UIView+SGFrame.m in Sources */,
 				847F02EF1FCD34F7006D2C0D /* NoMediateController.m in Sources */,
+				847017EB1FCE850D00F6B7FD /* JXPopoverAction.m in Sources */,
 				840BFDA61FC6B18A00F51468 /* NSObject+DLSVP.m in Sources */,
 				840BFE801FC6B75D00F51468 /* UIView+CZAddition.m in Sources */,
 				847F032C1FCD74DA006D2C0D /* FinishMediateCell.m in Sources */,
@@ -850,6 +905,7 @@
 				8405C0C41FCBF5E7002E5F2C /* MyCaseController.m in Sources */,
 				847F02E91FCD34C0006D2C0D /* WaitAuditController.m in Sources */,
 				847F02F51FCD3525006D2C0D /* FinishMediateController.m in Sources */,
+				847017F11FCEA4F700F6B7FD /* SectionView.m in Sources */,
 				840BFE871FC6B75D00F51468 /* UIViewController+CZAddition.m in Sources */,
 				840E90141FCC193D00AFA482 /* SGPageTitleViewConfigure.m in Sources */,
 				8405C0B71FCBC256002E5F2C /* NotHaveCase.m in Sources */,

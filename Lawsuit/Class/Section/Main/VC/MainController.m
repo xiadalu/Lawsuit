@@ -37,7 +37,7 @@
 -(void)loadData{
     for (int i = 0 ; i < 10; i++) {
         NSDictionary* dic = @{@"title":@"张三与李四的交通事故纠纷",
-                              @"state":@"homep1_order_ste1",
+                              @"state":[NSString stringWithFormat:@"homep1_order_ste%d",i%5],
                               @"time":@"2016-04-12 10:20",
                               };
         ListCaseModel* model = [ListCaseModel yy_modelWithJSON:dic];

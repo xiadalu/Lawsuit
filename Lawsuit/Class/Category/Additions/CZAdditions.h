@@ -10,5 +10,5 @@
 #import "UIScreen+CZAddition.h"
 #import "UIButton+CenterImageAndTitle.h"
 #import "UIViewController+CZAddition.h"
-
+#import "NSString+Function.h"
 

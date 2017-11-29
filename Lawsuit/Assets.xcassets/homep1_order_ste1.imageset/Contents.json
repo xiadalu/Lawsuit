@@ -2,16 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "homep1_order_ste1.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "homep1_order_ste1@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "homep1_order_ste1@3x.png",
       "scale" : "3x"
     }
   ],

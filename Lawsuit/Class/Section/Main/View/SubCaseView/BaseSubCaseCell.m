@@ -38,7 +38,7 @@
     [self.backView addSubview:self.titleLabel];
     
     self.processImage = [[UIImageView alloc] init];
-    self.processImage.contentMode = UIViewContentModeScaleAspectFit;
+    self.processImage.contentMode = UIViewContentModeScaleAspectFill;
     [self.backView addSubview:self.processImage];
     
     self.stateLabel = [[UILabel alloc] init];
@@ -141,15 +141,15 @@
     }
     
     if ([model.state isEqualToString:@"10"]) {
-        self.processImage.image = [UIImage imageNamed:@"homep1_order_ste2"];
+        self.processImage.image = [UIImage imageNamed:@"homep1_order_ste0"];
     }
     
     if ([model.state isEqualToString:@"11"]) {
-        self.processImage.image = [UIImage imageNamed:@"homep1_order_ste3"];
+        self.processImage.image = [UIImage imageNamed:@"homep1_order_ste1"];
     }
     
     if ([model.state isEqualToString:@"12"]) {
-        self.processImage.image = [UIImage imageNamed:@"homep1_order_ste5"];
+        self.processImage.image = [UIImage imageNamed:@"homep1_order_ste2"];
     }
    
     

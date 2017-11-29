@@ -33,6 +33,7 @@
 		840E90141FCC193D00AFA482 /* SGPageTitleViewConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E900C1FCC193D00AFA482 /* SGPageTitleViewConfigure.m */; };
 		840E901D1FCC20E400AFA482 /* BaseSubCaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E901C1FCC20E400AFA482 /* BaseSubCaseController.m */; };
 		847017DB1FCE6ABB00F6B7FD /* UIViewController+LeftSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017D91FCE6ABB00F6B7FD /* UIViewController+LeftSlide.m */; };
+		847017E11FCE7E6F00F6B7FD /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017E01FCE7E6F00F6B7FD /* SettingController.m */; };
 		847F02D41FCD0AF7006D2C0D /* BaseSubCaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02D31FCD0AF7006D2C0D /* BaseSubCaseModel.m */; };
 		847F02E61FCD1BBC006D2C0D /* AllCaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02E51FCD1BBC006D2C0D /* AllCaseController.m */; };
 		847F02E91FCD34C0006D2C0D /* WaitAuditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F02E81FCD34C0006D2C0D /* WaitAuditController.m */; };
@@ -132,6 +133,8 @@
 		840E901C1FCC20E400AFA482 /* BaseSubCaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSubCaseController.m; sourceTree = "<group>"; };
 		847017D91FCE6ABB00F6B7FD /* UIViewController+LeftSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LeftSlide.m"; sourceTree = "<group>"; };
 		847017DA1FCE6ABB00F6B7FD /* UIViewController+LeftSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LeftSlide.h"; sourceTree = "<group>"; };
+		847017DF1FCE7E6F00F6B7FD /* SettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		847017E01FCE7E6F00F6B7FD /* SettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
 		847F02D21FCD0AF7006D2C0D /* BaseSubCaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseSubCaseModel.h; sourceTree = "<group>"; };
 		847F02D31FCD0AF7006D2C0D /* BaseSubCaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSubCaseModel.m; sourceTree = "<group>"; };
 		847F02E41FCD1BBC006D2C0D /* AllCaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllCaseController.h; sourceTree = "<group>"; };
@@ -410,6 +413,8 @@
 			children = (
 				840BFEA61FC6DAE200F51468 /* LeftController.h */,
 				840BFEA71FC6DAE200F51468 /* LeftController.m */,
+				847017DF1FCE7E6F00F6B7FD /* SettingController.h */,
+				847017E01FCE7E6F00F6B7FD /* SettingController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -827,6 +832,7 @@
 				847F02D41FCD0AF7006D2C0D /* BaseSubCaseModel.m in Sources */,
 				8405C0BE1FCBDC89002E5F2C /* ListCaseModel.m in Sources */,
 				847F032D1FCD74DA006D2C0D /* MediatingCell.m in Sources */,
+				847017E11FCE7E6F00F6B7FD /* SettingController.m in Sources */,
 				840BFE8F1FC6C90E00F51468 /* BaseController.m in Sources */,
 				8405C0C11FCBE1CB002E5F2C /* MyMediationController.m in Sources */,
 				840BFEA01FC6CE5700F51468 /* MyNavigationController.m in Sources */,

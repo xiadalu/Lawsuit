@@ -9,6 +9,7 @@
 #import "LeftController.h"
 #import "SectionHeader.h"
 #import "UIViewController+LeftSlide.h"
+#import "SettingController.h"
 #define kRightWidth     100
 @interface LeftController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -80,7 +81,10 @@
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self hide];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    SettingController* setVC = [[SettingController alloc] init];
+    [DCURLRouter pushViewController:setVC animated:YES];
    
 }
 

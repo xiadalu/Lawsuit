@@ -29,9 +29,11 @@
 }
 
 -(void)setBtnTitle:(NSString *)btnTitle{
+    self.selectBtn.frame = CGRectMake(kScreenWidth-100, 5, 100, 60-10);
     [self.selectBtn setTitle:btnTitle forState:UIControlStateNormal];
 }
 -(void)setBtnImageName:(NSString *)btnImageName{
+    self.selectBtn.frame = CGRectMake(kScreenWidth-60, 5, 60, 60-10);
     [self.selectBtn setImage:[UIImage imageNamed:btnImageName] forState:UIControlStateNormal];
 }
 -(void)setLabelStr:(NSString *)labelStr{

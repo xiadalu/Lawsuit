@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>1、登陆卡退问题</string>
+		<key>state</key>
+		<integer>1</integer>
+		<key>content</key>
+		<array>
+			<string>手机卡慢</string>
+			<string>异常退出</string>
+			<string>无法登陆</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>2、功能使用问题</string>
+		<key>state</key>
+		<integer>1</integer>
+		<key>content</key>
+		<array>
+			<string>通话存证功能问题</string>
+			<string>录音存证功能问题</string>
+			<string>录像存证功能问题</string>
+			<string>拍照存证功能问题</string>
+		</array>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>3、云端使用问题</string>
+		<key>state</key>
+		<integer>1</integer>
+		<key>content</key>
+		<array>
+			<string>通话文件云端问题</string>
+			<string>录音文件云端问题
+录音文件云端问题
+</string>
+			<string>录像文件云端问题</string>
+			<string>拍照文件云端问题</string>
+		</array>
+	</dict>
+</array>
+</plist>

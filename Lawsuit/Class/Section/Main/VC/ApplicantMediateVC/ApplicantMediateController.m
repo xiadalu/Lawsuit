@@ -11,6 +11,8 @@
 
 #import "SectionView.h"
 #import "ApplicantTextViewCell.h"
+#import "NextStepController.h"
+#import "GuideServerController.h"
 
 #define NextBtnH   50
 
@@ -58,10 +60,14 @@ static NSString* SectionViewID = @"SectionViewID";
     self.nextBtn.backgroundColor = [UIColor lightGrayColor];
     [self.nextBtn setTitle:@"下一步" forState:UIControlStateNormal];
     [self.nextBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.nextBtn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.nextBtn addTarget:self action:@selector(nextStepClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.nextBtn];
     
    
+}
+-(void)nextStepClick:(UIButton*)btn{
+    NextStepController* nextStepVC = [[NextStepController alloc] init];
+    [self.navigationController pushViewController:nextStepVC animated:YES];
 }
 #pragma mark ------------------delegate/dataSource--------------------
 #pragma mark cell
@@ -131,10 +137,12 @@ static NSString* SectionViewID = @"SectionViewID";
         [self showSelectContent:btn];
     }
     if (tagIndex==1) {
-        
+        GuideServerController* guideVC = [[GuideServerController alloc] init];
+        [self.navigationController pushViewController:guideVC animated:YES];
     }
     if (tagIndex==2) {
-        
+        GuideServerController* guideVC = [[GuideServerController alloc] init];
+        [self.navigationController pushViewController:guideVC animated:YES];
     }
     if (tagIndex==3) {
         
@@ -164,6 +172,7 @@ static NSString* SectionViewID = @"SectionViewID";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+#pragma mark 显示选择的列表
 -(void)showSelectContent:(UIButton*)btn{
     
     JXPopoverView* popoverView = [JXPopoverView popoverView];

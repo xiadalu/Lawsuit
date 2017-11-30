@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>labelStr</key>
+		<string>描述纠纷</string>
+		<key>btnStr</key>
+		<string>请选择&gt;</string>
+	</dict>
+	<dict>
+		<key>labelStr</key>
+		<string>诉讼请求</string>
+		<key>btnStr</key>
+		<string>query</string>
+	</dict>
+	<dict>
+		<key>labelStr</key>
+		<string>事实与理由</string>
+		<key>btnStr</key>
+		<string>query</string>
+	</dict>
+	<dict>
+		<key>labelStr</key>
+		<string>提交证据</string>
+		<key>btnStr</key>
+		<string>add</string>
+	</dict>
+</array>
+</plist>

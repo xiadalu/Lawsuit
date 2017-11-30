@@ -8,14 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SectionView : UIView
+@interface SectionView : UITableViewHeaderFooterView
 
 
 @property(nonatomic,strong)UIButton* selectBtn;
-@property(nonatomic,copy)NSString* text;
-@property(nonatomic,copy)NSString* title;
 
--(instancetype)initWithFrame:(CGRect)frame labelText:(NSString*)text buttonText:(NSString*)title;
+@property(nonatomic,copy)NSString* labelStr;
 
+@property(nonatomic,copy)NSString* btnTitle;
+
+@property(nonatomic,copy)NSString* btnImageName;
+
+-(instancetype)initWithReuseIdentifier:(NSString *)reuseIdentifier;
 
 @end

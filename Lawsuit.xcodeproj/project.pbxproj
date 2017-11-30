@@ -55,6 +55,7 @@
 		847F032D1FCD74DA006D2C0D /* MediatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03251FCD74DA006D2C0D /* MediatingCell.m */; };
 		847F032E1FCD74DA006D2C0D /* WaitAuditCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F03261FCD74DA006D2C0D /* WaitAuditCell.m */; };
 		847F032F1FCD74DA006D2C0D /* NoMediateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847F032A1FCD74DA006D2C0D /* NoMediateCell.m */; };
+		8493C2C71FCFBFCC00AFC8E7 /* ApplicantMediate.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8493C2C61FCFBFCC00AFC8E7 /* ApplicantMediate.plist */; };
 		84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */; };
 		84FC96101FC55B3D00DEBDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC960E1FC55B3D00DEBDA2 /* Main.storyboard */; };
 		84FC96121FC55B3D00DEBDA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FC96111FC55B3D00DEBDA2 /* Assets.xcassets */; };
@@ -185,6 +186,7 @@
 		847F03281FCD74DA006D2C0D /* MediatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatingCell.h; sourceTree = "<group>"; };
 		847F03291FCD74DA006D2C0D /* WaitAuditCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitAuditCell.h; sourceTree = "<group>"; };
 		847F032A1FCD74DA006D2C0D /* NoMediateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoMediateCell.m; sourceTree = "<group>"; };
+		8493C2C61FCFBFCC00AFC8E7 /* ApplicantMediate.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApplicantMediate.plist; sourceTree = "<group>"; };
 		84FC96051FC55B3D00DEBDA2 /* Lawsuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lawsuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FC96081FC55B3D00DEBDA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -449,6 +451,7 @@
 		840E8FFE1FCC03A000AFA482 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				8493C2C61FCFBFCC00AFC8E7 /* ApplicantMediate.plist */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -783,6 +786,7 @@
 				84FC96151FC55B3D00DEBDA2 /* LaunchScreen.storyboard in Resources */,
 				84FC96121FC55B3D00DEBDA2 /* Assets.xcassets in Resources */,
 				84FC96101FC55B3D00DEBDA2 /* Main.storyboard in Resources */,
+				8493C2C71FCFBFCC00AFC8E7 /* ApplicantMediate.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

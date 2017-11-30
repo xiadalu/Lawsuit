@@ -14,11 +14,15 @@
 
 #define NextBtnH   50
 
+static NSString* SectionViewID = @"SectionViewID";
+
 @interface ApplicantMediateController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong)UITableView* tableView;
 @property(nonatomic,strong)NSMutableArray* listArray;
 @property(nonatomic,strong)UIButton* nextBtn;
+@property(nonatomic,strong)SectionView* sView;
+@property(nonatomic,strong)NSArray* array;
 
 @end
 
@@ -33,6 +37,9 @@
     
 }
 -(void)loadData{
+
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"ApplicantMediate" ofType:@"plist"];
+    self.array = [NSArray arrayWithContentsOfFile:path];
     for (int i = 0; i<2; i++) {
         [self.listArray addObject:@"我们都是好孩子"];
     }
@@ -102,27 +109,36 @@
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 4;
 }
-#pragma mark section的view
-#pragma mark 需要优化，多次加载SectionView
+#pragma mark section的view(复用)
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    if (section==0) {
-        SectionView* sView = [[SectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 60) labelText:@"描述纠纷" buttonText:@"请选择>"];
-        return sView;
-    }
-    if (section==1) {
-        SectionView* sView = [[SectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 60) labelText:@"诉讼请求" buttonText:@"请选择>"];
-        return sView;
-    }
-    if (section==2) {
-        SectionView* sView = [[SectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 60) labelText:@"事实与理由" buttonText:@"请选择>"];
-        return sView;
-    }
-    if (section==3) {
-        SectionView* sView = [[SectionView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 60) labelText:@"提交证据" buttonText:@"请选择>"];
-        return sView;
-    }
-    return [[UIView alloc] init];
     
+    SectionView* sectionView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:SectionViewID];
+    NSDictionary* dic = self.array[section];
+    sectionView.labelStr = dic[@"labelStr"];
+    if (section==0) {
+        sectionView.btnTitle = dic[@"btnStr"];
+    }else{
+        sectionView.btnImageName = dic[@"btnStr"];
+    }
+    sectionView.selectBtn.tag = section+1000;
+    [sectionView.selectBtn addTarget:self action:@selector(selectBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    return sectionView;
+    
+}
+-(void)selectBtnClick:(UIButton*)btn{
+    NSInteger tagIndex = btn.tag-1000;
+    if (tagIndex==0) {
+        [self showSelectContent:btn];
+    }
+    if (tagIndex==1) {
+        
+    }
+    if (tagIndex==2) {
+        
+    }
+    if (tagIndex==3) {
+        
+    }
 }
 #pragma mark   section header 高度
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -148,34 +164,34 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
--(void)btnClick:(UIButton*)btn{
+-(void)showSelectContent:(UIButton*)btn{
     
     JXPopoverView* popoverView = [JXPopoverView popoverView];
     popoverView.showShade = YES;
     
-    JXPopoverAction* action0 = [JXPopoverAction actionWithTitle:@"婚姻家庭" handler:^(JXPopoverAction *action) {
-        [btn setTitle:@"婚姻家庭" forState:UIControlStateNormal];
+    JXPopoverAction* action0 = [JXPopoverAction actionWithTitle:@"婚姻家庭>" handler:^(JXPopoverAction *action) {
+        [btn setTitle:@"婚姻家庭>" forState:UIControlStateNormal];
     }];
-    JXPopoverAction* action1 = [JXPopoverAction actionWithTitle:@"债权债务" handler:^(JXPopoverAction *action) {
-        [btn setTitle:@"债权债务" forState:UIControlStateNormal];
+    JXPopoverAction* action1 = [JXPopoverAction actionWithTitle:@"债权债务>" handler:^(JXPopoverAction *action) {
+        [btn setTitle:@"债权债务>" forState:UIControlStateNormal];
     }];
-    JXPopoverAction* action2 = [JXPopoverAction actionWithTitle:@"合同纠纷" handler:^(JXPopoverAction *action) {
-        [btn setTitle:@"合同纠纷" forState:UIControlStateNormal];
+    JXPopoverAction* action2 = [JXPopoverAction actionWithTitle:@"合同纠纷>" handler:^(JXPopoverAction *action) {
+        [btn setTitle:@"合同纠纷>" forState:UIControlStateNormal];
     }];
-    JXPopoverAction* action3 = [JXPopoverAction actionWithTitle:@"劳务纠纷" handler:^(JXPopoverAction *action) {
-        [btn setTitle:@"劳务纠纷" forState:UIControlStateNormal];
+    JXPopoverAction* action3 = [JXPopoverAction actionWithTitle:@"劳务纠纷>" handler:^(JXPopoverAction *action) {
+        [btn setTitle:@"劳务纠纷>" forState:UIControlStateNormal];
     }];
-    JXPopoverAction* action4 = [JXPopoverAction actionWithTitle:@"恶意伤害" handler:^(JXPopoverAction *action) {
-        [btn setTitle:@"恶意伤害" forState:UIControlStateNormal];
+    JXPopoverAction* action4 = [JXPopoverAction actionWithTitle:@"恶意伤害>" handler:^(JXPopoverAction *action) {
+        [btn setTitle:@"恶意伤害>" forState:UIControlStateNormal];
     }];
-    JXPopoverAction* action5 = [JXPopoverAction actionWithTitle:@"房产纠纷" handler:^(JXPopoverAction *action) {
-        [btn setTitle:@"房产纠纷" forState:UIControlStateNormal];
+    JXPopoverAction* action5 = [JXPopoverAction actionWithTitle:@"房产纠纷>" handler:^(JXPopoverAction *action) {
+        [btn setTitle:@"房产纠纷>" forState:UIControlStateNormal];
     }];
-    JXPopoverAction* action6 = [JXPopoverAction actionWithTitle:@"交通事故" handler:^(JXPopoverAction *action) {
-        [btn setTitle:@"交通事故" forState:UIControlStateNormal];
+    JXPopoverAction* action6 = [JXPopoverAction actionWithTitle:@"交通事故>" handler:^(JXPopoverAction *action) {
+        [btn setTitle:@"交通事故>" forState:UIControlStateNormal];
     }];
-    JXPopoverAction* action7 = [JXPopoverAction actionWithTitle:@"其它" handler:^(JXPopoverAction *action) {
-        [btn setTitle:@"其它" forState:UIControlStateNormal];
+    JXPopoverAction* action7 = [JXPopoverAction actionWithTitle:@"其它>" handler:^(JXPopoverAction *action) {
+        [btn setTitle:@"其它>" forState:UIControlStateNormal];
     }];
     [popoverView showToView:btn withActions:@[action0,action1,action2,action3,action4,action5,action6,action7]];
 }
@@ -188,10 +204,12 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         //tableHeaderView
-        UIView* view = [[UIView alloc] init];
-        view.bounds = CGRectMake(0, 0, kScreenWidth, 40);
-        view.backgroundColor = [UIColor redColor];
-        _tableView.tableHeaderView = view;
+        UIImageView* imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"process"]];
+        imgView.bounds = CGRectMake(0, 0, kScreenWidth, 40);
+        imgView.contentMode = UIViewContentModeScaleAspectFit;
+        _tableView.tableHeaderView = imgView;
+        //注册header
+        [_tableView registerClass:[SectionView class] forHeaderFooterViewReuseIdentifier:SectionViewID];
     }
     return _tableView;
 }

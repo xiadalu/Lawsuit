@@ -4,6 +4,7 @@ PODS:
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
+  - IQKeyboardManager (5.0.3)
   - Masonry (1.1.0)
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
@@ -31,6 +32,7 @@ PODS:
 DEPENDENCIES:
   - DCURLRouter
   - FMDB
+  - IQKeyboardManager
   - Masonry
   - MLeaksFinder
   - RealReachability
@@ -45,6 +47,7 @@ SPEC CHECKSUMS:
   DCURLRouter: 6bb8d5c85390f5ce5a9966ad68e0e994a3e89b25
   FBRetainCycleDetector: f0c7b290bf48ae77f6ae060843ce34ae341781eb
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  IQKeyboardManager: dc5b18b47e5170e4d150bb86dbee8c8a2fc48997
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   RealReachability: a8c483900986a0f3305733961effbfbb00637a02
@@ -55,6 +58,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   ZYCornerRadius: f0af817be7805b5c63d793042ca7a03f81e14069
 
-PODFILE CHECKSUM: 4132fd017800148aa56c74018cfdaf00ea7408a0
+PODFILE CHECKSUM: 05634cc99e74f14a59185ece3cbbea6fe68f97b5
 
 COCOAPODS: 1.3.1

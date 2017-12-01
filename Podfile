@@ -27,5 +27,8 @@ pod 'RealReachability'
 
 pod 'SVProgressHUD'
 
+pod 'IQKeyboardManager'
+
+
 
 end

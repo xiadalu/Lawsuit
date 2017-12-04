@@ -7,7 +7,7 @@ target 'Lawsuit' do
 
 pod 'SDWebImage'
 
-pod 'Masonry'
+pod 'HYBMasonryAutoCellHeight'
 
 pod 'YYModel'
 

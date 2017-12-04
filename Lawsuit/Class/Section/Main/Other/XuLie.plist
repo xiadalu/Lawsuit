@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>序列号1</string>
+			<key>state</key>
+			<false/>
+			<key>content</key>
+			<array>
+				<string>姓名</string>
+				<string>当事人类型</string>
+				<string>性别</string>
+				<string>身份证号码</string>
+				<string>联系电话</string>
+				<string>长居住地</string>
+				<string>工作单位</string>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>序列号2</string>
+			<key>state</key>
+			<false/>
+			<key>content</key>
+			<array>
+				<string>姓名</string>
+				<string>当事人类型</string>
+				<string>性别</string>
+				<string>身份证号码</string>
+				<string>联系电话</string>
+				<string>长居住地</string>
+				<string>工作单位</string>
+			</array>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>序列号1</string>
+			<key>state</key>
+			<string>NO</string>
+			<key>content</key>
+			<array>
+				<string>姓名</string>
+				<string>当事人类型</string>
+				<string>性别</string>
+				<string>身份证号码</string>
+				<string>联系电话</string>
+				<string>长居住地</string>
+				<string>工作单位</string>
+			</array>
+		</dict>
+	</array>
+</array>
+</plist>

@@ -10,4 +10,7 @@
 
 @interface NotHaveCase : UIView
 
+
+
+
 @end

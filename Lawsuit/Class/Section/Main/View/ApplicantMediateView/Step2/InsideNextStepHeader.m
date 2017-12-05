@@ -36,9 +36,6 @@
     self.deleteBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [self.contentView addSubview:self.deleteBtn];
     
-    
-    
-    
     UIView* lineView = [[UIView alloc] init];
     lineView.backgroundColor = [UIColor blackColor];
     [self.contentView addSubview:lineView];

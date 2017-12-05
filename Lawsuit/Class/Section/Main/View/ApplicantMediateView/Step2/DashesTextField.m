@@ -31,6 +31,14 @@
     return self;
 }
 
+-(instancetype)init{
+    self = [super init];
+    if (self) {
+        self.backgroundColor = [UIColor cz_colorWithRed:242 green:242 blue:242];
+        [self createUI];
+    }
+    return self;
+}
 -(void)createUI{
     
     self.customLeftView = [[UIView alloc] init];

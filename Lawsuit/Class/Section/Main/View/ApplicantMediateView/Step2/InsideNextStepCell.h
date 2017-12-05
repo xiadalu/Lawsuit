@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 
 #import "InsideNextStepModel.h"
+#import "DashesTextField.h"
 
 @interface InsideNextStepCell : UITableViewCell
 
-@property (nonatomic, strong) UILabel *contentLabel;
+@property (nonatomic, strong) DashesTextField* textField;
 
 
 -(void)configCellWithModel:(InsideNextStepModel*)model;

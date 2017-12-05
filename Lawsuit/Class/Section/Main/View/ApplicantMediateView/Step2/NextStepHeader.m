@@ -12,7 +12,7 @@
 
 @property(nonatomic,strong)UIView* bottomLineView;
 
-@property(nonatomic,strong)UIView* topLineView;
+//@property(nonatomic,strong)UIView* topLineView;
 
 
 @end
@@ -29,9 +29,9 @@
 }
 -(void)createUI{
     
-    self.topLineView = [[UIView alloc] init];
-    self.topLineView.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0];
-    [self.contentView addSubview:self.topLineView];
+//    self.topLineView = [[UIView alloc] init];
+//    self.topLineView.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0];
+//    [self.contentView addSubview:self.topLineView];
     
     
     self.titleLabel = [[UILabel alloc] init];
@@ -39,7 +39,7 @@
     
     
     self.addBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.addBtn setTitle:@"添加" forState:UIControlStateNormal];
+    [self.addBtn setImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
     [self.addBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     self.addBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [self.contentView addSubview:self.addBtn];
@@ -48,6 +48,10 @@
     self.bottomLineView.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1.0];
     [self.contentView addSubview:self.bottomLineView];
     
+//    [self.topLineView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.top.equalTo(self.contentView);
+//        make.height.mas_equalTo(20);
+//    }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.contentView).offset(10);
@@ -67,10 +71,7 @@
         make.height.mas_equalTo(10);
     }];
     
-    [self.topLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.equalTo(self.contentView);
-        make.height.mas_equalTo(20);
-    }];
+   
 }
 
 @end

@@ -10,9 +10,10 @@
 
 @class NextStepModel;
 
-@protocol TestCellDelegate <NSObject>
+@protocol NextStepCellDelegate <NSObject>
 
 - (void)reloadCellHeightForModel:(NextStepModel *)model atIndexPath:(NSIndexPath*)indexPath;
+- (void)deleteCellHeightForModel:(NextStepModel*)model atIndexPath:(NSIndexPath*)indexPath;
 
 @end
 

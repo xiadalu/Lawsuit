@@ -18,7 +18,7 @@
 #define SectionID    @"NextStepCell"
 
 
-@interface NextStepController ()<UITableViewDelegate,UITableViewDataSource>
+@interface NextStepController ()<UITableViewDelegate,UITableViewDataSource,NextStepCellDelegate>
 
 @property(nonatomic,strong)UITableView* tableView;
 @property(nonatomic,strong)NSMutableArray* allArray;
@@ -113,7 +113,7 @@
     NextStepModel* nextModel = [[NextStepModel alloc] init];
     nextModel.title = @"序列号3";
     nextModel.state = NO;
-    NSArray* subArr = @[@"姓名",@"当事人类型",@"性别",@"身份证号码",@"联系电话",@"长居住地",@"工作单位"];
+    NSArray* subArr = @[@"小王",@"民事案件",@"女",@"1312223443345654333",@"13261541813",@"北京海淀区",@"北京最牛逼公司"];
     for (NSUInteger k = 0; k < subArr.count; k++) {
         InsideNextStepModel* model = [[InsideNextStepModel alloc] init];
         model.comment = subArr[k];
@@ -138,6 +138,14 @@
 #pragma mark ---TestCellDelegate
 -(void)reloadCellHeightForModel:(NextStepModel *)model atIndexPath:(NSIndexPath *)indexPath{
     [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+-(void)deleteCellHeightForModel:(NextStepModel *)model atIndexPath:(NSIndexPath *)indexPath{
+    NSMutableArray* mArr = self.allArray[indexPath.section];
+    [mArr removeObjectAtIndex:indexPath.row];
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationFade];
+    
+    
 }
 
 #pragma mark --------------------懒加载-----------------------

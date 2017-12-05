@@ -19,6 +19,7 @@
 @property(nonatomic,strong)UITableView* tableView;
 @property(nonatomic,strong)NextStepModel* nextModel;
 @property (nonatomic, strong) NSIndexPath *indexPath;
+@property(nonatomic,strong)NSArray* leftArray;
 
 @end
 
@@ -27,6 +28,7 @@
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        self.leftArray = @[@"姓名",@"当事人类型",@"性别",@"身份证号码",@"联系电话",@"长居住地",@"工作单位"];
         [self.contentView addSubview:self.tableView];
         [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.top.equalTo(self.contentView);
@@ -43,6 +45,7 @@
     if (!cell) {
         cell = [[InsideNextStepCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:iden];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.textField.labelStr = self.leftArray[indexPath.row];
     }
     
     InsideNextStepModel* model = self.nextModel.commentModels[indexPath.row];
@@ -55,12 +58,14 @@
     sectionView.titleLabel.text = self.nextModel.title;
     sectionView.unfoldBtn.tag = 1000+section;
     [sectionView.unfoldBtn addTarget:self action:@selector(unfoldBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [sectionView.deleteBtn addTarget:self action:@selector(deleteBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     return sectionView;
 }
 #pragma mark header高
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 30;
 }
+#pragma mark 折叠
 -(void)unfoldBtnClick:(UIButton*)btn{
     BOOL b = self.nextModel.state;
     if (b) {
@@ -73,8 +78,16 @@
     if ([self.delegate respondsToSelector:@selector(reloadCellHeightForModel:atIndexPath:)]) {
         [self.delegate reloadCellHeightForModel:self.nextModel atIndexPath:self.indexPath];
     }
-    
 }
+
+#pragma mark 点击删除
+-(void)deleteBtnClick:(UIButton*)btn{
+    if ([self.delegate respondsToSelector:@selector(deleteCellHeightForModel:atIndexPath:)]) {
+        [self.delegate deleteCellHeightForModel:self.nextModel atIndexPath:self.indexPath];
+    }
+}
+
+
 #pragma mark cell数
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     BOOL b = self.nextModel.state;

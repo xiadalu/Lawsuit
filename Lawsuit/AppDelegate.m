@@ -14,6 +14,8 @@
 
 #import "MyNavigationController.h"
 
+#import "LoginController.h"
+
 @interface AppDelegate ()
 
 
@@ -35,8 +37,10 @@
     MainController* mainVC = [[MainController alloc] init];
     MyNavigationController* nav = [[MyNavigationController alloc] initWithRootViewController:mainVC];
     
+    LoginController* loginVC = [[LoginController alloc] init];
+    self.window.rootViewController = loginVC;
     
-    self.window.rootViewController = nav;
+//    self.window.rootViewController = nav;
     
     [self.window makeKeyAndVisible];
 

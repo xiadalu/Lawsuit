@@ -13,6 +13,13 @@
 + (BOOL)isTelephone:(NSString*)str;
 //nil空字符串转为@""
 + (NSString*) isBlankString:(NSString *)string;
+
+//随机字符串生成
++(NSString*)generateRandomStringBitCount:(NSInteger)BitCount;
+
+//粘贴手机号有特殊字符的处理
++(NSString*)pastePhoneSpecialCharacter:(NSString*)text;
+
 //手机号隐藏
 +(NSString *)phoneNumToAsterisk:(NSString*)phoneNum;
 //设置字体高度
@@ -26,5 +33,8 @@
 
 //判断是否是汉字
 -(BOOL)isChinese;
+
+//身份证号验证
++ (BOOL)verifyIDCardNumber:(NSString *)value;
 
 @end

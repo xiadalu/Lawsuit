@@ -18,23 +18,26 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupMyNav];
-    
+//
     [self setUI];
 }
 -(void)setUI{
     
 }
 -(void)setupMyNav{
-    self.myNav = [[MyNav alloc] init];
-    self.myNav.navImageView.backgroundColor = MainColor;
-    
-    self.myNav.titleLabel.textColor = [UIColor whiteColor];
-    [self.myNav.leftBtn setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
-    [self.myNav.leftBtn addTarget:self action:@selector(popAction) forControlEvents:UIControlEventTouchUpInside];
-    
-    
     [self.view addSubview:self.myNav];
-    
+}
+
+-(MyNav*)myNav{
+    if (!_myNav) {
+        _myNav = [[MyNav alloc] init];
+        _myNav.navImageView.backgroundColor = MainColor;
+        
+        _myNav.titleLabel.textColor = [UIColor whiteColor];
+        [_myNav.leftBtn setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
+        [_myNav.leftBtn addTarget:self action:@selector(popAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _myNav;
 }
 
 -(void)setTitle:(NSString *)title{

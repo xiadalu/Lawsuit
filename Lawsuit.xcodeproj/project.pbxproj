@@ -30,6 +30,11 @@
 		840E90121FCC193D00AFA482 /* SGPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E90071FCC193D00AFA482 /* SGPageContentView.m */; };
 		840E90131FCC193D00AFA482 /* SGPageTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E900B1FCC193D00AFA482 /* SGPageTitleView.m */; };
 		840E90141FCC193D00AFA482 /* SGPageTitleViewConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 840E900C1FCC193D00AFA482 /* SGPageTitleViewConfigure.m */; };
+		842AB0BD1FD6502F00BB7799 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842AB0BC1FD6502F00BB7799 /* LoginController.m */; };
+		842AB0C51FD6533600BB7799 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 842AB0C21FD6533600BB7799 /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		842AB0C61FD6533600BB7799 /* NSString+DES.m in Sources */ = {isa = PBXBuildFile; fileRef = 842AB0C31FD6533600BB7799 /* NSString+DES.m */; };
+		842AB0C91FD653AD00BB7799 /* NSObject+XWAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 842AB0C71FD653AD00BB7799 /* NSObject+XWAdd.m */; };
+		842AB0CC1FD655FB00BB7799 /* LoginIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 842AB0CB1FD655FB00BB7799 /* LoginIcon.m */; };
 		847017DB1FCE6ABB00F6B7FD /* UIViewController+LeftSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017D91FCE6ABB00F6B7FD /* UIViewController+LeftSlide.m */; };
 		847017E11FCE7E6F00F6B7FD /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017E01FCE7E6F00F6B7FD /* SettingController.m */; };
 		847017E91FCE850D00F6B7FD /* JXPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847017E61FCE850D00F6B7FD /* JXPopoverView.m */; };
@@ -68,6 +73,11 @@
 		849BBC3D1FD55AB100029388 /* NextStepModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BBC3C1FD55AB100029388 /* NextStepModel.m */; };
 		849BBC401FD55ACE00029388 /* InsideNextStepModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 849BBC3F1FD55ACE00029388 /* InsideNextStepModel.m */; };
 		849BBC421FD5629F00029388 /* XuLie.plist in Resources */ = {isa = PBXBuildFile; fileRef = 849BBC411FD5629F00029388 /* XuLie.plist */; };
+		84D6DBCC1FD6847D0025BE58 /* RegistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D6DBCB1FD6847D0025BE58 /* RegistController.m */; };
+		84D6DBCF1FD68C740025BE58 /* TextFieldLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D6DBCE1FD68C740025BE58 /* TextFieldLeft.m */; };
+		84D6DC131FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D6DC121FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.m */; };
+		84D6DC1C1FD69D360025BE58 /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D6DC1A1FD69D350025BE58 /* UIButton+CZAddition.m */; };
+		84D6DC1F1FD69F990025BE58 /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D6DC1D1FD69F990025BE58 /* UILabel+CZAddition.m */; };
 		84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */; };
 		84FC96101FC55B3D00DEBDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC960E1FC55B3D00DEBDA2 /* Main.storyboard */; };
 		84FC96121FC55B3D00DEBDA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FC96111FC55B3D00DEBDA2 /* Assets.xcassets */; };
@@ -148,6 +158,17 @@
 		840E900D1FCC193D00AFA482 /* SGPageTitleViewConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageTitleViewConfigure.h; sourceTree = "<group>"; };
 		840E900E1FCC193D00AFA482 /* SGPageTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPageTitleView.h; sourceTree = "<group>"; };
 		840E900F1FCC193D00AFA482 /* SGPagingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGPagingView.h; sourceTree = "<group>"; };
+		842AB0BB1FD6502F00BB7799 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		842AB0BC1FD6502F00BB7799 /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		842AB0C01FD6533600BB7799 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		842AB0C11FD6533600BB7799 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		842AB0C21FD6533600BB7799 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		842AB0C31FD6533600BB7799 /* NSString+DES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DES.m"; sourceTree = "<group>"; };
+		842AB0C41FD6533600BB7799 /* NSString+DES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DES.h"; sourceTree = "<group>"; };
+		842AB0C71FD653AD00BB7799 /* NSObject+XWAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XWAdd.m"; sourceTree = "<group>"; };
+		842AB0C81FD653AD00BB7799 /* NSObject+XWAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XWAdd.h"; sourceTree = "<group>"; };
+		842AB0CA1FD655FB00BB7799 /* LoginIcon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginIcon.h; sourceTree = "<group>"; };
+		842AB0CB1FD655FB00BB7799 /* LoginIcon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginIcon.m; sourceTree = "<group>"; };
 		847017D91FCE6ABB00F6B7FD /* UIViewController+LeftSlide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LeftSlide.m"; sourceTree = "<group>"; };
 		847017DA1FCE6ABB00F6B7FD /* UIViewController+LeftSlide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LeftSlide.h"; sourceTree = "<group>"; };
 		847017DF1FCE7E6F00F6B7FD /* SettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
@@ -221,6 +242,16 @@
 		849BBC3E1FD55ACE00029388 /* InsideNextStepModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsideNextStepModel.h; sourceTree = "<group>"; };
 		849BBC3F1FD55ACE00029388 /* InsideNextStepModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsideNextStepModel.m; sourceTree = "<group>"; };
 		849BBC411FD5629F00029388 /* XuLie.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = XuLie.plist; sourceTree = "<group>"; };
+		84D6DBCA1FD6847D0025BE58 /* RegistController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistController.h; sourceTree = "<group>"; };
+		84D6DBCB1FD6847D0025BE58 /* RegistController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistController.m; sourceTree = "<group>"; };
+		84D6DBCD1FD68C740025BE58 /* TextFieldLeft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldLeft.h; sourceTree = "<group>"; };
+		84D6DBCE1FD68C740025BE58 /* TextFieldLeft.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldLeft.m; sourceTree = "<group>"; };
+		84D6DC111FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+CenterImageAndTitle.h"; path = "../../../../../../../Documents/SVNProject/lvjinhui/IOS_Client/LvJinHuiSimple/LvJinHuiSimple/Class/Tools/Additions/UIButton+CenterImageAndTitle.h"; sourceTree = "<group>"; };
+		84D6DC121FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+CenterImageAndTitle.m"; path = "../../../../../../../Documents/SVNProject/lvjinhui/IOS_Client/LvJinHuiSimple/LvJinHuiSimple/Class/Tools/Additions/UIButton+CenterImageAndTitle.m"; sourceTree = "<group>"; };
+		84D6DC1A1FD69D350025BE58 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		84D6DC1B1FD69D360025BE58 /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		84D6DC1D1FD69F990025BE58 /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		84D6DC1E1FD69F990025BE58 /* UILabel+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAddition.h"; sourceTree = "<group>"; };
 		84FC96051FC55B3D00DEBDA2 /* Lawsuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lawsuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FC96081FC55B3D00DEBDA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -414,6 +445,7 @@
 		840BFDA11FC6AFA500F51468 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				842AB0BE1FD6533600BB7799 /* DES */,
 				840BFDA91FC6B46A00F51468 /* MyNav.h */,
 				840BFDA81FC6B46A00F51468 /* MyNav.m */,
 				840BFDA41FC6B18A00F51468 /* NSObject+DLSVP.h */,
@@ -425,6 +457,10 @@
 		840BFE651FC6B75C00F51468 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				84D6DC111FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.h */,
+				84D6DC121FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.m */,
+				842AB0C81FD653AD00BB7799 /* NSObject+XWAdd.h */,
+				842AB0C71FD653AD00BB7799 /* NSObject+XWAdd.m */,
 				847017F21FCEAAAB00F6B7FD /* NSString+Function.h */,
 				847017F31FCEAAAB00F6B7FD /* NSString+Function.m */,
 				8405C0AD1FCBBCC5002E5F2C /* UIButton+CenterImageAndTitle.h */,
@@ -433,10 +469,14 @@
 				840BFE661FC6B75C00F51468 /* UIColor+CZAddition.m */,
 				840BFE731FC6B75C00F51468 /* UIView+CZAddition.h */,
 				840BFE671FC6B75C00F51468 /* UIView+CZAddition.m */,
+				84D6DC1E1FD69F990025BE58 /* UILabel+CZAddition.h */,
+				84D6DC1D1FD69F990025BE58 /* UILabel+CZAddition.m */,
 				840BFE8B1FC6B7EB00F51468 /* UIScreen+CZAddition.h */,
 				840BFE6A1FC6B75C00F51468 /* UIScreen+CZAddition.m */,
 				840BFE6B1FC6B75C00F51468 /* UIViewController+CZAddition.h */,
 				840BFE781FC6B75C00F51468 /* UIViewController+CZAddition.m */,
+				84D6DC1B1FD69D360025BE58 /* UIButton+CZAddition.h */,
+				84D6DC1A1FD69D350025BE58 /* UIButton+CZAddition.m */,
 				840BFE7B1FC6B75C00F51468 /* CZAdditions.h */,
 			);
 			path = Additions;
@@ -445,6 +485,9 @@
 		840BFE961FC6C95F00F51468 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				842AB0B01FD64EFF00BB7799 /* Model */,
+				842AB0B11FD64EFF00BB7799 /* VC */,
+				842AB0AF1FD64EFE00BB7799 /* View */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -527,6 +570,55 @@
 				840E900E1FCC193D00AFA482 /* SGPageTitleView.h */,
 			);
 			path = SGPageTitle;
+			sourceTree = "<group>";
+		};
+		842AB0AF1FD64EFE00BB7799 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84D6DBCD1FD68C740025BE58 /* TextFieldLeft.h */,
+				84D6DBCE1FD68C740025BE58 /* TextFieldLeft.m */,
+				842AB0CA1FD655FB00BB7799 /* LoginIcon.h */,
+				842AB0CB1FD655FB00BB7799 /* LoginIcon.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		842AB0B01FD64EFF00BB7799 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		842AB0B11FD64EFF00BB7799 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				842AB0BB1FD6502F00BB7799 /* LoginController.h */,
+				842AB0BC1FD6502F00BB7799 /* LoginController.m */,
+				84D6DBCA1FD6847D0025BE58 /* RegistController.h */,
+				84D6DBCB1FD6847D0025BE58 /* RegistController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		842AB0BE1FD6533600BB7799 /* DES */ = {
+			isa = PBXGroup;
+			children = (
+				842AB0BF1FD6533600BB7799 /* GTMBase64 */,
+				842AB0C31FD6533600BB7799 /* NSString+DES.m */,
+				842AB0C41FD6533600BB7799 /* NSString+DES.h */,
+			);
+			path = DES;
+			sourceTree = "<group>";
+		};
+		842AB0BF1FD6533600BB7799 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				842AB0C01FD6533600BB7799 /* GTMBase64.h */,
+				842AB0C11FD6533600BB7799 /* GTMDefines.h */,
+				842AB0C21FD6533600BB7799 /* GTMBase64.m */,
+			);
+			path = GTMBase64;
 			sourceTree = "<group>";
 		};
 		847017E21FCE850D00F6B7FD /* JXPopoverView */ = {
@@ -921,17 +1013,22 @@
 				840E90121FCC193D00AFA482 /* SGPageContentView.m in Sources */,
 				849BBC2A1FD556FC00029388 /* BaseSubCaseCell.m in Sources */,
 				849BBC3D1FD55AB100029388 /* NextStepModel.m in Sources */,
+				842AB0BD1FD6502F00BB7799 /* LoginController.m in Sources */,
 				8405C0BA1FCBC645002E5F2C /* ListCaseCell.m in Sources */,
 				849BBC191FD555F200029388 /* NoMediateController.m in Sources */,
 				84FC96181FC55B3D00DEBDA2 /* main.m in Sources */,
 				847F02FF1FCD6A54006D2C0D /* ApplicantMediateController.m in Sources */,
+				842AB0C51FD6533600BB7799 /* GTMBase64.m in Sources */,
 				840BFE811FC6B75D00F51468 /* UIScreen+CZAddition.m in Sources */,
+				84D6DBCF1FD68C740025BE58 /* TextFieldLeft.m in Sources */,
 				840BFE7F1FC6B75D00F51468 /* UIColor+CZAddition.m in Sources */,
+				84D6DC1C1FD69D360025BE58 /* UIButton+CZAddition.m in Sources */,
 				8405C0B41FCBC207002E5F2C /* MainController.m in Sources */,
 				8493C2DE1FCFD65400AFC8E7 /* DashesTextField.m in Sources */,
 				849BBC2C1FD556FC00029388 /* WaitAuditCell.m in Sources */,
 				847017F41FCEAAAC00F6B7FD /* NSString+Function.m in Sources */,
 				840E90111FCC193D00AFA482 /* SGPageContentScrollView.m in Sources */,
+				84D6DBCC1FD6847D0025BE58 /* RegistController.m in Sources */,
 				8493C2D91FCFD5B500AFC8E7 /* ApplicantTextViewCell.m in Sources */,
 				84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */,
 				849BBC2B1FD556FC00029388 /* MediatingCell.m in Sources */,
@@ -948,15 +1045,20 @@
 				849BBC181FD555F200029388 /* AllCaseController.m in Sources */,
 				8493C2DA1FCFD5B500AFC8E7 /* LineTextView.m in Sources */,
 				849BBC051FD5548200029388 /* MyCaseController.m in Sources */,
+				84D6DC1F1FD69F990025BE58 /* UILabel+CZAddition.m in Sources */,
 				8493C2D81FCFD5B500AFC8E7 /* SectionView.m in Sources */,
 				8405C0C11FCBE1CB002E5F2C /* MyMediationController.m in Sources */,
 				849BBC3A1FD55A5F00029388 /* InsideNextStepHeader.m in Sources */,
 				849BBC1E1FD555F200029388 /* FinishMediateController.m in Sources */,
 				849BBC2D1FD556FC00029388 /* FinishMediateCell.m in Sources */,
+				842AB0CC1FD655FB00BB7799 /* LoginIcon.m in Sources */,
 				8493C2CD1FCFD37400AFC8E7 /* NextStepController.m in Sources */,
+				84D6DC131FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.m in Sources */,
 				849BBC341FD55A1300029388 /* InsideNextStepCell.m in Sources */,
 				840BFEA01FC6CE5700F51468 /* MyNavigationController.m in Sources */,
+				842AB0C91FD653AD00BB7799 /* NSObject+XWAdd.m in Sources */,
 				849BBC401FD55ACE00029388 /* InsideNextStepModel.m in Sources */,
+				842AB0C61FD6533600BB7799 /* NSString+DES.m in Sources */,
 				847017DB1FCE6ABB00F6B7FD /* UIViewController+LeftSlide.m in Sources */,
 				847017E91FCE850D00F6B7FD /* JXPopoverView.m in Sources */,
 				8493C2DB1FCFD5B500AFC8E7 /* ApplicantProofCell.m in Sources */,

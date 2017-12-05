@@ -29,6 +29,20 @@
     return dateStr;
 }
 
+
+/**
+ 生成随机码
+ 
+ @param BitCount 随机码位数
+ @return 随机码
+ */
++(NSString*)generateRandomStringBitCount:(NSInteger)BitCount{
+    char data[BitCount];
+    for (int x=0;x<BitCount;data[x++] = (char)('a' + (arc4random_uniform(26))));
+    NSString* result=[[NSString alloc] initWithBytes:data length:BitCount encoding:NSUTF8StringEncoding];
+    return result;
+}
+
 +(BOOL)isTelephone:(NSString*)str{
     NSString * MOBILE = @"^1(3[0-9]|47|5[0-35-9]|8[025-9])\\d{8}$";
     NSString * CM = @"^((13[4-9])|(147)|(15[0-2,7-9])|(178)|(18[2-4,7-8]))\\d{8}|(1705)\\d{7}$";;
@@ -48,6 +62,18 @@
     [regextestcm evaluateWithObject:str];
 
 }
+
++(NSString*)pastePhoneSpecialCharacter:(NSString *)text{
+    NSString *s = [[NSString alloc] initWithUTF8String:text.UTF8String];
+    NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:@"@／：；（）¥「」＂、[]{}#%-*+=_\\|~＜＞$€^•'@#$%^&*()_+'\"\U0000202d\U0000202c"];
+    NSString *trimmedString = [s stringByTrimmingCharactersInSet:set];
+    NSArray * array = [trimmedString componentsSeparatedByString:@" "];
+    NSLog(@"%@",array);
+    NSString * phoneN = array.lastObject;
+    NSString * newMobile = [phoneN stringByReplacingOccurrencesOfString:@"-" withString:@""];
+    return newMobile;
+}
+
 
 +(NSString *)phoneNumToAsterisk:(NSString*)phoneNum;
 {
@@ -87,4 +113,41 @@
     strlength=[self getToInt];
     return ((strlength/ 2 )== 1 )? YES : NO ;
 }
+
+
++ (BOOL)verifyIDCardNumber:(NSString *)value{
+    value = [value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    if ([value length] != 18) {
+        return NO;
+    }
+    NSString *mmdd = @"(((0[13578]|1[02])(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)(0[1-9]|[12][0-9]|30))|(02(0[1-9]|[1][0-9]|2[0-8])))";
+    NSString *leapMmdd = @"0229";
+    NSString *year = @"(19|20)[0-9]{2}";
+    NSString *leapYear = @"(19|20)(0[48]|[2468][048]|[13579][26])";
+    NSString *yearMmdd = [NSString stringWithFormat:@"%@%@", year, mmdd];
+    NSString *leapyearMmdd = [NSString stringWithFormat:@"%@%@", leapYear, leapMmdd];
+    NSString *yyyyMmdd = [NSString stringWithFormat:@"((%@)|(%@)|(%@))", yearMmdd, leapyearMmdd, @"20000229"];
+    NSString *area = @"(1[1-5]|2[1-3]|3[1-7]|4[1-6]|5[0-4]|6[1-5]|82|[7-9]1)[0-9]{4}";
+    NSString *regex = [NSString stringWithFormat:@"%@%@%@", area, yyyyMmdd  , @"[0-9]{3}[0-9Xx]"];
+    NSPredicate *regexTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+    if (![regexTest evaluateWithObject:value]) {
+        return NO;
+    }
+    int summary = ([value substringWithRange:NSMakeRange(0,1)].intValue +
+                   [value substringWithRange:NSMakeRange(10,1)].intValue) *7+
+    ([value substringWithRange:NSMakeRange(1,1)].intValue + [value substringWithRange:NSMakeRange(11,1)].intValue) *9+
+    ([value substringWithRange:NSMakeRange(2,1)].intValue + [value substringWithRange:NSMakeRange(12,1)].intValue) *10+
+    ([value substringWithRange:NSMakeRange(3,1)].intValue + [value substringWithRange:NSMakeRange(13,1)].intValue) *5+
+    ([value substringWithRange:NSMakeRange(4,1)].intValue + [value substringWithRange:NSMakeRange(14,1)].intValue) *8+
+    ([value substringWithRange:NSMakeRange(5,1)].intValue + [value substringWithRange:NSMakeRange(15,1)].intValue) *4+
+    ([value substringWithRange:NSMakeRange(6,1)].intValue + [value substringWithRange:NSMakeRange(16,1)].intValue) *2+
+    [value substringWithRange:NSMakeRange(7,1)].intValue *1 + [value substringWithRange:NSMakeRange(8,1)].intValue *6+
+    [value substringWithRange:NSMakeRange(9,1)].intValue *3;
+    NSInteger remainder = summary % 11;
+    NSString *checkBit = @"";
+    NSString *checkString = @"10X98765432";
+    checkBit = [checkString substringWithRange:NSMakeRange(remainder,1)];// 判断校验位
+    return [checkBit isEqualToString:[[value substringWithRange:NSMakeRange(17,1)] uppercaseString]];
+}
+
 @end

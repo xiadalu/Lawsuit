@@ -9,6 +9,7 @@
 #import "UIView+CZAddition.h"
 #import "UIButton+CZAddition.h"
 #import "UILabel+CZAddition.h"
+#import "UIImage+Scale.h"
 #import "UIScreen+CZAddition.h"
 #import "UIButton+CenterImageAndTitle.h"
 #import "UIViewController+CZAddition.h"

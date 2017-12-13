@@ -9,6 +9,7 @@
 #ifndef common_h
 #define common_h
 
+
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kStatusHeight CGRectGetHeight([UIApplication sharedApplication].statusBarFrame)

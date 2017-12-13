@@ -55,4 +55,13 @@
     return button;
 }
 
+
++(instancetype)cz_textButton:(NSString *)title fontSize:(CGFloat)fontSize titleColor:(UIColor *)titleColor backgroundColor:(UIColor *)backgroundColor{
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:titleColor forState:UIControlStateNormal];
+    button.backgroundColor = backgroundColor;
+    return button;
+}
+
 @end

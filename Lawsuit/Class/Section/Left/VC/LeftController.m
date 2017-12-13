@@ -8,9 +8,12 @@
 
 #import "LeftController.h"
 #import "SectionHeader.h"
-#import "UIViewController+LeftSlide.h"
 #import "SettingController.h"
-#define kRightWidth     100
+#import "CertificationController.h"
+#import "UIViewController+XLSlideMenu.h"
+#import "XLSlideMenu.h"
+#import "MyNavigationController.h"
+#define kRightWidth     75
 @interface LeftController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property(nonatomic,strong)UITableView* tableView;
@@ -34,14 +37,12 @@
     
 }
 -(void)setUI{
-    [self initSlideFoundation];
     UIButton* btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(kScreenWidth-kRightWidth, 0,kRightWidth, kScreenHeight);
     [btn addTarget:self action:@selector(hideLeft) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
 }
 -(void)hideLeft{
-    [self hide];
 }
 #pragma mark cell
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -81,10 +82,13 @@
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self hide];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    SettingController* setVC = [[SettingController alloc] init];
-    [DCURLRouter pushViewController:setVC animated:YES];
+    
+    [self.xl_sldeMenu showRootViewControllerAnimated:YES];
+    CertificationController* cerVC = [[CertificationController alloc] init];
+    MyNavigationController* nav = (MyNavigationController*)self.xl_sldeMenu.rootViewController;
+    [nav pushViewController:cerVC animated:YES];
+    
    
 }
 

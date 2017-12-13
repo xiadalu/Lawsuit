@@ -45,4 +45,6 @@
  */
 + (instancetype)cz_imageButton:(NSString *)imageName backgroundImageName:(NSString *)backgroundImageName;
 
++(instancetype)cz_textButton:(NSString *)title fontSize:(CGFloat)fontSize titleColor:(UIColor *)titleColor backgroundColor:(UIColor *)backgroundColor;
+
 @end

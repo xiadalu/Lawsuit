@@ -8,7 +8,13 @@
 
 #import "RegistController.h"
 
+#import "RegistRegion.h"
+
 @interface RegistController ()
+
+@property (strong, nonatomic) UIScrollView* scrollView;
+
+@property(nonatomic,strong)RegistRegion* registRegion;
 
 @end
 
@@ -16,22 +22,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.title = @"注册";
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+-(void)setUI{
+    
+    [self.view addSubview:self.scrollView];
+    
+    self.registRegion = [[RegistRegion alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-kStatusHeight-44)];
+    
+    [self.scrollView addSubview:self.registRegion];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark 懒加载scrollview
+-(UIScrollView*)scrollView{
+    if (!_scrollView) {
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, kStatusHeight+44, kScreenWidth, kScreenHeight)];
+        _scrollView.contentSize = CGSizeMake(kScreenWidth, kScreenHeight);
+        if (@available(iOS 11.0, *)) {
+            _scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }else{
+            self.automaticallyAdjustsScrollViewInsets = NO;
+        }
+    }
+    return _scrollView;
 }
-*/
+
 
 @end

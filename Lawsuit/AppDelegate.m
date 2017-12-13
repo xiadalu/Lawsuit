@@ -7,16 +7,16 @@
 //
 
 #import "AppDelegate.h"
-
-
-#import "MainController.h"
+#import "AppDelegate+EaseMob.h"
 #import "LeftController.h"
-
 #import "MyNavigationController.h"
-
 #import "LoginController.h"
+// iOS10注册APNs所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
 
-@interface AppDelegate ()
+@interface AppDelegate () <UNUserNotificationCenterDelegate>
 
 
 @end
@@ -32,21 +32,26 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+
+    [self easemobApplication:application didFinishLaunchingWithOptions:launchOptions appkey:EaseAppKey apnsCertName:EaseCertName otherConfig:@{kSDKConfigEnableConsoleLogger:[NSNumber numberWithBool:YES]}];
     
-    //主控制器
-    MainController* mainVC = [[MainController alloc] init];
-    MyNavigationController* nav = [[MyNavigationController alloc] initWithRootViewController:mainVC];
-    
-    LoginController* loginVC = [[LoginController alloc] init];
-    self.window.rootViewController = loginVC;
-    
-//    self.window.rootViewController = nav;
-    
+
     [self.window makeKeyAndVisible];
 
     return YES;
 }
 
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
+    [self easemobApplication:application didReceiveRemoteNotification:userInfo];
+}
+-(void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler{
+    NSDictionary* userInfo = notification.request.content.userInfo;
+    [self easemobApplication:[UIApplication sharedApplication] didReceiveRemoteNotification:userInfo];
+}
+-(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler{
+    completionHandler();
+}
 #pragma mark 网络配置
 -(void)networkConfig{
     //XMCenter配置

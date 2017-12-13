@@ -7,15 +7,16 @@
 //
 
 #import "MainController.h"
+#import "XLSlideMenu.h"
 #import "AppDelegate.h"
 #import "LeftController.h"
+#import "RightController.h"
 #import "NotHaveCase.h"
 #import "ListCaseCell.h"
 #import "MyCaseController.h"
 #import "MyMediationController.h"
 #import "ApplicantMediateController.h"
 #import "RelevanceCodeController.h"
-#import "UIViewController+LeftSlide.h"
 
 @interface MainController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -33,6 +34,13 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     [self loadData];
     
+}
+
+-(void)setNavigation{
+    [super setNavigation];
+    [self.myNav.leftBtn setImage:[UIImage imageNamed:@"Shape"] forState:UIControlStateNormal];
+    [self.myNav.rightBtn setImage:[UIImage imageNamed:@"Shape"] forState:UIControlStateNormal];
+    [self.myNav.rightBtn addTarget:self action:@selector(rightClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 -(void)loadData{
     for (int i = 0 ; i < 10; i++) {
@@ -148,34 +156,15 @@
     
 }
 
-
-
-#pragma mark ----------------------导航------------------------
--(void)setupMyNav{
-    self.myNav = [[MyNav alloc] init];
-    self.myNav.navImageView.backgroundColor = MainColor;
-
-    self.myNav.titleLabel.textColor = [UIColor whiteColor];
-    [self.myNav.leftBtn setImage:[UIImage imageNamed:@"Shape"] forState:UIControlStateNormal];
-    [self.myNav.leftBtn addTarget:self action:@selector(openLeft:) forControlEvents:UIControlEventTouchUpInside];
-
-
-    [self.view addSubview:self.myNav];
+-(void)popAction{
+    [self.xl_sldeMenu showLeftViewControllerAnimated:YES];
 }
 
--(void)openLeft:(UIButton*)btn{
-    //左侧控制器
-    if (!self.leftVC) {
-        self.leftVC = [[LeftController alloc] init];
-        CGRect frame = self.leftVC.view.frame;
-        frame.origin.x = - CGRectGetWidth(self.view.frame);
-        self.leftVC.view.frame = frame;
-        [[UIApplication sharedApplication].keyWindow addSubview:self.leftVC.view];
-    }
-    
-    [self.leftVC show];
-    
+-(void)rightClick:(UIButton*)btn{
+    RightController* rightVC = [[RightController alloc] init];
+    [self.navigationController pushViewController:rightVC animated:YES];
 }
+
 #pragma mark --------------------懒加载-----------------------
 #pragma mark 懒加载tableView
 -(UITableView*)tableView{
@@ -183,6 +172,7 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kStatusHeight+144, kScreenWidth, kScreenHeight-kStatusHeight-144) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        
     }
     return _tableView;
 }

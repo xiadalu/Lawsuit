@@ -17,20 +17,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self setupMyNav];
-//
+    [self setNavigation];
     [self setUI];
+    
 }
+-(void)setNavigation{
+     [self.view addSubview:self.myNav];
+}
+
 -(void)setUI{
     
 }
--(void)setupMyNav{
-    [self.view addSubview:self.myNav];
+#pragma mark ------------------delegate/dataSource-------------------
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return [[UITableViewCell alloc] init];
 }
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 0;
+}
+
 
 -(MyNav*)myNav{
     if (!_myNav) {
-        _myNav = [[MyNav alloc] init];
+        _myNav = [[MyNav alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kStatusHeight+44)];
         _myNav.navImageView.backgroundColor = MainColor;
         
         _myNav.titleLabel.textColor = [UIColor whiteColor];
@@ -44,14 +54,7 @@
     self.myNav.titleLabel.text = title;
 }
 
--(void)viewDidLayoutSubviews{
-    [super viewDidLayoutSubviews];
-    if (@available(iOS 11.0, *)) {
-        self.myNav.frame = CGRectMake(0, 0, kScreenWidth, self.view.safeAreaInsets.top+44);
-    } else {
-        self.myNav.frame = CGRectMake(0, 0, kScreenWidth, 64);
-    }
-}
+
 
 //默认的值是黑色的
 -(UIStatusBarStyle)preferredStatusBarStyle

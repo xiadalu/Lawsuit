@@ -10,13 +10,12 @@
 
 @interface BaseController : UIViewController
 
+//@property(nonatomic,strong)UITableView* tableView;
 
 @property(nonatomic,strong)MyNav* myNav;
 
--(void)setupMyNav;
-
 -(void)setUI;
-
-
+-(void)setNavigation;
+-(void)popAction;
 
 @end

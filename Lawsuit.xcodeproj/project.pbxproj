@@ -219,7 +219,6 @@
 		84C0C5C01FDA312C001BB265 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0C5BD1FDA312C001BB265 /* CustomTextField.m */; };
 		84C0C5C31FDA3B1D001BB265 /* RegistRegion.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0C5C21FDA3B1D001BB265 /* RegistRegion.m */; };
 		84D6DBCC1FD6847D0025BE58 /* RegistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D6DBCB1FD6847D0025BE58 /* RegistController.m */; };
-		84D6DC131FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D6DC121FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.m */; };
 		84D6DC1C1FD69D360025BE58 /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D6DC1A1FD69D350025BE58 /* UIButton+CZAddition.m */; };
 		84D6DC1F1FD69F990025BE58 /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D6DC1D1FD69F990025BE58 /* UILabel+CZAddition.m */; };
 		84FC960A1FC55B3D00DEBDA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC96091FC55B3D00DEBDA2 /* AppDelegate.m */; };
@@ -705,8 +704,6 @@
 		84C0C5C21FDA3B1D001BB265 /* RegistRegion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistRegion.m; sourceTree = "<group>"; };
 		84D6DBCA1FD6847D0025BE58 /* RegistController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistController.h; sourceTree = "<group>"; };
 		84D6DBCB1FD6847D0025BE58 /* RegistController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistController.m; sourceTree = "<group>"; };
-		84D6DC111FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+CenterImageAndTitle.h"; path = "../../../../../../../Documents/SVNProject/lvjinhui/IOS_Client/LvJinHuiSimple/LvJinHuiSimple/Class/Tools/Additions/UIButton+CenterImageAndTitle.h"; sourceTree = "<group>"; };
-		84D6DC121FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+CenterImageAndTitle.m"; path = "../../../../../../../Documents/SVNProject/lvjinhui/IOS_Client/LvJinHuiSimple/LvJinHuiSimple/Class/Tools/Additions/UIButton+CenterImageAndTitle.m"; sourceTree = "<group>"; };
 		84D6DC1A1FD69D350025BE58 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
 		84D6DC1B1FD69D360025BE58 /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
 		84D6DC1D1FD69F990025BE58 /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
@@ -916,8 +913,6 @@
 		840BFE651FC6B75C00F51468 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
-				84D6DC111FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.h */,
-				84D6DC121FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.m */,
 				842AB0C81FD653AD00BB7799 /* NSObject+XWAdd.h */,
 				842AB0C71FD653AD00BB7799 /* NSObject+XWAdd.m */,
 				847017F21FCEAAAB00F6B7FD /* NSString+Function.h */,
@@ -2301,7 +2296,6 @@
 				845B2EC81FD7D0530083FF1C /* MJRefreshComponent.m in Sources */,
 				8448E0711FDA49CB00421949 /* XLSlideMenu.m in Sources */,
 				845B2A3C1FD7BDF70083FF1C /* MyNav.m in Sources */,
-				84D6DC131FD69C6A0025BE58 /* UIButton+CenterImageAndTitle.m in Sources */,
 				845B2EFE1FD7D0530083FF1C /* EaseLocationViewController.m in Sources */,
 				845B2ED31FD7D0530083FF1C /* EMAudioPlayerUtil.m in Sources */,
 				845B2F071FD7D0530083FF1C /* EaseCustomMessageCell.m in Sources */,

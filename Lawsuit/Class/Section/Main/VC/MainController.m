@@ -17,6 +17,8 @@
 #import "MyMediationController.h"
 #import "ApplicantMediateController.h"
 #import "RelevanceCodeController.h"
+#import "HelpCenterController.h"
+#import "SearchController.h"
 
 @interface MainController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -152,8 +154,6 @@
     [self.navigationController pushViewController:mymedictionVC animated:YES];
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    
 }
 
 -(void)popAction{
@@ -161,8 +161,14 @@
 }
 
 -(void)rightClick:(UIButton*)btn{
-    RightController* rightVC = [[RightController alloc] init];
-    [self.navigationController pushViewController:rightVC animated:YES];
+//    RightController* rightVC = [[RightController alloc] init];
+//    [self.navigationController pushViewController:rightVC animated:YES];
+//    HelpCenterController* helpVC = [[HelpCenterController alloc] init];
+//    [self.navigationController pushViewController:helpVC animated:YES];
+    
+    SearchController* searchVC = [[SearchController alloc] init];
+    [self.navigationController pushViewController:searchVC animated:YES];
+   
 }
 
 #pragma mark --------------------懒加载-----------------------
